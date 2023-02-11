@@ -11,3 +11,12 @@
 		<slot />
 	</div>
 </div>
+
+<style lang="postcss">
+	:global(html) {
+		color: theme(colors.gray.100);
+		font-size: theme(fontSize.base);
+		font-weight: theme(fontWeight.medium);
+		background-color: theme(colors.gray.900);
+	}
+</style>
