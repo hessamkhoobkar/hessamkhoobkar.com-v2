@@ -1,24 +1,18 @@
-<script>
+<script lang="ts">
 	import LogoCombo from '../../assets/images/LogoCombo.svelte';
+	import Navigation from '../sidenav/Navigation.svelte';
+	import UserCard from '../sidenav/UserCard.svelte';
 </script>
 
 <div class="nav-bg w-80 h-screen p-4 pt-8 flex flex-col">
 	<!-- <img src={LogoCombo} alt="hessam khoobkar's website logo" class="mb-12 h-12" /> -->
 	<LogoCombo class="mb-12" />
+
 	<div class="flex-grow">
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sit repellat laudantium
-			quaerat rem dolores in reiciendis quos delectus accusantium doloribus voluptatum, quasi veniam
-			nobis quod reprehenderit nesciunt eius dolorem.
-		</p>
+		<Navigation />
 	</div>
 
-	<div class="w-full h-64 bg-gray-900 rounded-2xl p-4">
-		<p>user card</p>
-	</div>
-	<!-- Head Logo -->
-	<!-- Nav links -->
-	<!-- Footer Card -->
+	<UserCard />
 </div>
 
 <style>
