@@ -7,7 +7,7 @@
 	<div class="w-80">
 		<SideNav />
 	</div>
-	<div class="flex-grow max-w-[1440px] mx-auto">
+	<div class="flex-grow p-8 max-w-[1440px] mx-auto">
 		<slot />
 	</div>
 </div>
