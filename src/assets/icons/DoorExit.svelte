@@ -1,7 +1,7 @@
 <script lang="ts">
-	let klass: string;
+	let klass: string | null = null;
 	export { klass as class };
-	let size: string = '24';
+	export let size: string = '24';
 </script>
 
 <svg
