@@ -1,7 +1,8 @@
 <script lang="ts">
-	import Avatar from '@/assets/images/hessam-avatar.jpg';
 	import Buttton from '@/components/foundation/Button/Buttton.svelte';
+	import Modal from '@/components/foundation/Modal.svelte';
 
+	import Avatar from '@/assets/images/hessam-avatar.jpg';
 	import DoorExit from '@/assets/icons/DoorExit.svelte';
 	import Dribbble from '@/assets/icons/Dribbble.svelte';
 	import Github from '@/assets/icons/Github.svelte';
@@ -9,9 +10,7 @@
 	import Linkedin from '@/assets/icons/Linkedin.svelte';
 	import Settings from '@/assets/icons/Settings.svelte';
 
-	function ModalCall() {
-		alert('Called');
-	}
+	let showModal = false;
 </script>
 
 <div class="w-full bg-gray-900 rounded-2xl p-4">
@@ -30,7 +29,7 @@
 			variant="outline"
 			size="small"
 			class="flex-grow"
-			href="https://www.google.com"
+			href="https://www.linkedin.com/in/hessam-khoobkar/"
 			target="_blank"
 			icon={Linkedin}
 		/>
@@ -39,7 +38,7 @@
 			variant="outline"
 			size="small"
 			class="flex-grow"
-			href="https://www.google.com"
+			href="https://www.instagram.com/hessam_khoobkar/"
 			target="_blank"
 			icon={Instagram}
 		/>
@@ -48,7 +47,7 @@
 			variant="outline"
 			size="small"
 			class="flex-grow"
-			href="https://www.google.com"
+			href="https://dribbble.com/hessam_khoobkar"
 			target="_blank"
 			icon={Dribbble}
 		/>
@@ -57,14 +56,52 @@
 			variant="outline"
 			size="small"
 			class="flex-grow"
-			href="https://www.google.com"
+			href="https://github.com/hessamkhoobkar"
 			target="_blank"
 			icon={Github}
 		/>
 	</div>
 	<!-- Facade buttons -->
 	<div class="flex flex-col gap-2 w-full">
-		<Buttton color="plain" variant="outline" label="Setting" icon={Settings} on:click={ModalCall} />
-		<Buttton color="plain" variant="filled" label="Log out" icon={DoorExit} on:click={ModalCall} />
+		<Buttton
+			color="plain"
+			variant="outline"
+			label="Setting"
+			icon={Settings}
+			on:click={() => (showModal = true)}
+		/>
+		<Buttton
+			color="plain"
+			variant="filled"
+			label="Log out"
+			icon={DoorExit}
+			on:click={() => (showModal = true)}
+		/>
 	</div>
 </div>
+
+{#if showModal}
+	<Modal on:close={() => (showModal = false)}>
+		<h2 slot="header">
+			modal
+			<small><em>adjective</em> mod·al \ˈmō-dəl\</small>
+		</h2>
+
+		<ol class="definition-list">
+			<li>of or relating to modality in logic</li>
+			<li>
+				containing provisions as to the mode of procedure or the manner of taking effect —used of a
+				contract or legacy
+			</li>
+			<li>of or relating to a musical mode</li>
+			<li>of or relating to structure as opposed to substance</li>
+			<li>
+				of, relating to, or constituting a grammatical form or category characteristically
+				indicating predication
+			</li>
+			<li>of or relating to a statistical mode</li>
+		</ol>
+
+		<a href="https://www.merriam-webster.com/dictionary/modal">merriam-webster.com</a>
+	</Modal>
+{/if}
