@@ -1,35 +1,39 @@
 <script lang="ts">
-	import Close from '@/assets/icons/Close.svelte';
 	import { createEventDispatcher, onDestroy } from 'svelte';
+	import Close from '@/assets/icons/Close.svelte';
+	import Buttton from './Button/Buttton.svelte';
 
 	const dispatch = createEventDispatcher();
 	const close = () => dispatch('close');
 
-	let modal;
+	let modal: HTMLElement;
 
-	const handle_keydown = (e) => {
-		if (e.key === 'Escape') {
+	const handle_keydown = (event: any) => {
+		if (event.key === 'Escape') {
 			close();
 			return;
 		}
 
-		if (e.key === 'Tab') {
+		if (event.key === 'Tab') {
 			// trap focus
-			const nodes = modal.querySelectorAll('*');
+			const nodes = modal.querySelectorAll('*') as NodeListOf<HTMLElement>;
 			const tabbable = Array.from(nodes).filter((n) => n.tabIndex >= 0);
+			let index = 0;
+			if (document.activeElement) {
+				index = tabbable.indexOf(document.activeElement as HTMLElement);
+			}
+			if (index === -1 && event.shiftKey) index = 0;
 
-			let index = tabbable.indexOf(document.activeElement);
-			if (index === -1 && e.shiftKey) index = 0;
-
-			index += tabbable.length + (e.shiftKey ? -1 : 1);
+			index += tabbable.length + (event.shiftKey ? -1 : 1);
 			index %= tabbable.length;
 
 			tabbable[index].focus();
-			e.preventDefault();
+			event.preventDefault();
 		}
 	};
 
-	const previously_focused = typeof document !== 'undefined' && document.activeElement;
+	const previously_focused =
+		typeof document !== 'undefined' && (document.activeElement as HTMLElement);
 
 	if (previously_focused) {
 		onDestroy(() => {
@@ -41,13 +45,13 @@
 <svelte:window on:keydown={handle_keydown} />
 
 <div
-	class="fixed inset-0 w-screen h-screen bg-gray-1000 bg-opacity-70 cursor-pointer"
+	class="fixed inset-0 w-screen h-screen bg-gray-1000 bg-opacity-70 cursor-pointer z-30"
 	on:click={close}
 	on:keydown={handle_keydown}
 />
 
 <div
-	class="absolute top-1/2 left-1/2 -translate-y-2/4 -translate-x-2/4 w-[calc(100vw - 4rem)] max-w-lg max-h-[calc(100vh - 4rem)] bg-gray-850 rounded-2xl p-8"
+	class="absolute top-1/2 left-1/2 -translate-y-2/4 -translate-x-2/4 w-[calc(100vw - 4rem)] max-w-lg max-h-[calc(100vh - 4rem)] bg-gray-850 rounded-2xl z-40"
 	role="dialog"
 	aria-modal="true"
 	bind:this={modal}
@@ -61,7 +65,22 @@
 		<Close size="20" class="mr-1" />
 		<span> Close </span>
 	</button>
-	<slot name="header" />
-	<hr />
-	<slot />
+	<div class="p-8">
+		<slot name="header" />
+	</div>
+	<div class="p-8 pt-0">
+		<slot />
+	</div>
+	<div class="px-8 py-4 bg-gray-800 rounded-b-2xl flex justify-end items-center gap-4">
+		<slot name="footer">
+			<Buttton variant="filled" color="plain" label="Cancel" on:click={close} />
+			<Buttton
+				variant="filled"
+				color="primary"
+				label="Bamboozled"
+				class="min-w-[9rem]"
+				on:click={close}
+			/>
+		</slot>
+	</div>
 </div>
