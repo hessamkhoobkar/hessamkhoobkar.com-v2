@@ -17,7 +17,7 @@
 </script>
 
 <div class="relative">
-	<div class="fixed w-80 inset-y-0 left-0">
+	<div class="fixed w-80 inset-y-0 left-0 z-10">
 		<SideNav />
 	</div>
 	<div

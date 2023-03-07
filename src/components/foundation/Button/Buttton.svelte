@@ -38,6 +38,11 @@
 	// Variant & Color Classes
 	let variantStyle: string;
 	$: switch (true) {
+		case variant === 'filled' && color === 'primary' && disabled:
+			variantStyle =
+				'bg-sky-700 border-sky-700 text-sky-900 hover:bg-sky-700 hover:text-sky-900 opacity-70 cursor-not-allowed';
+			break;
+
 		case variant === 'filled' && color === 'primary':
 			variantStyle = 'bg-sky-500 border-sky-400 text-white hover:bg-sky-400 hover:text-gray-900';
 			break;
