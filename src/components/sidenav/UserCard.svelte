@@ -9,6 +9,7 @@
 	import Instagram from '@/assets/icons/Instagram.svelte';
 	import Linkedin from '@/assets/icons/Linkedin.svelte';
 	import Settings from '@/assets/icons/Settings.svelte';
+	import Grineyes from '@/assets/icons/Grineyes.svelte';
 
 	let showModal = false;
 </script>
@@ -82,26 +83,21 @@
 
 {#if showModal}
 	<Modal on:close={() => (showModal = false)}>
-		<h2 slot="header">
-			modal
-			<small><em>adjective</em> mod·al \ˈmō-dəl\</small>
-		</h2>
+		<div
+			class="w-24 h-24 rounded-full bg-gradient-to-tr from-sky-900 bg-opacity-50 border-2 border-sky-700 flex justify-center items-center"
+			slot="header"
+		>
+			<Grineyes size="64" />
+		</div>
 
-		<ol class="definition-list">
-			<li>of or relating to modality in logic</li>
-			<li>
-				containing provisions as to the mode of procedure or the manner of taking effect —used of a
-				contract or legacy
-			</li>
-			<li>of or relating to a musical mode</li>
-			<li>of or relating to structure as opposed to substance</li>
-			<li>
-				of, relating to, or constituting a grammatical form or category characteristically
-				indicating predication
-			</li>
-			<li>of or relating to a statistical mode</li>
-		</ol>
+		<h2 class="text-3xl font-bold mb-2">Are you serious?</h2>
 
-		<a href="https://www.merriam-webster.com/dictionary/modal">merriam-webster.com</a>
+		<p class="mb-4">
+			Did you try to log me out of my own website? 😄. No hard feelings, though. I'm the one who
+			replicates a user panel as a personal website and put the button there.
+		</p>
+		<p>
+			I'm glad you were intrigued by the website and curious to see what the logout button would do.
+		</p>
 	</Modal>
 {/if}
