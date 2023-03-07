@@ -28,16 +28,20 @@
 	// Size Classes & icon sizes
 	$: btnSize =
 		size === 'small'
-			? 'text-sm h-10'
+			? 'text-xs h-10'
 			: size === 'large'
-			? 'text-lg h-14 min-w-58 py-4 px-10'
-			: 'text-base h-12 min-w-40 py-3 px-6';
+			? 'text-baselg h-14 py-4 px-10'
+			: 'text-sm h-12 py-3 px-6';
 
 	$: iconSize = size === 'small' ? '16' : size === 'large' ? '24' : '20';
 
 	// Variant & Color Classes
 	let variantStyle: string;
 	$: switch (true) {
+		case variant === 'filled' && color === 'primary':
+			variantStyle = 'bg-sky-500 border-sky-400 text-white hover:bg-sky-400 hover:text-gray-900';
+			break;
+
 		case variant === 'filled' && color === 'plain':
 			variantStyle =
 				'bg-gray-850 border-gray-850 text-white hover:bg-sky-900 hover:bg-opacity-20 hover:text-sky-500';
