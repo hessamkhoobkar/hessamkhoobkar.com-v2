@@ -5,13 +5,10 @@
 </script>
 
 <div class="nav-bg w-80 h-screen p-4 pt-8 flex flex-col">
-	<!-- <img src={LogoCombo} alt="hessam khoobkar's website logo" class="mb-12 h-12" /> -->
 	<LogoCombo class="mb-12" />
-
 	<div class="flex-grow">
 		<Navigation />
 	</div>
-
 	<UserCard />
 </div>
 
