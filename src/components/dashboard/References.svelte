@@ -75,7 +75,11 @@
 </script>
 
 <div class="relative bg-gray-850 shadow-lg shadow-gray-900 rounded-2xl p-6 col-span-8">
-	<h3 class="text-lg font-semibold mb-4">Refrances and recomandatoins</h3>
+	<h3
+		class="text-lg mb-4 font-black bg-clip-text text-transparent bg-gradient-to-tr from-sky-500 to-teal-500 uppercase"
+	>
+		Refrances and recomandatoins
+	</h3>
 
 	<Splide
 		hasTrack={false}
