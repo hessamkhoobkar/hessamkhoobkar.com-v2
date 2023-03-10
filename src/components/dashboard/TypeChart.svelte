@@ -33,9 +33,15 @@
 </script>
 
 <div class="bg-gray-850 shadow-lg shadow-gray-900 rounded-2xl p-6 col-span-4">
-	<h3 class="text-lg font-semibold mb-4">My Work Categories</h3>
-	<canvas bind:this={canvas} />
-	<div class="flex flex-col mt-8 gap-1">
+	<h3
+		class="text-lg mb-4 font-black bg-clip-text text-transparent bg-gradient-to-tr from-sky-500 to-teal-500 uppercase"
+	>
+		My Work Categories
+	</h3>
+	<div class="max-h-52 w-full">
+		<canvas bind:this={canvas} class="mx-auto" />
+	</div>
+	<div class="flex flex-col mt-8 gap-2 text-sm">
 		<div class="flex justify-between items-center">
 			<span class="bg-indigo-500 w-2 h-2 rounded-full mr-4" />
 			<span class="mr-auto">UI Design Projects</span>
