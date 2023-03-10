@@ -24,7 +24,7 @@
 		class="ml-80 min-h-[calc(100vh_-_1rem)] rounded-tl-2xl bg-gray-900 mt-4 relative overflow-x-hidden"
 		on:mousemove={handleMousemove}
 	>
-		<div class="absolute inset-0 overflow-hidden" style="z-index: 4;">
+		<div class="fixed inset-0 top-4 left-80 rounded-tl-2xl overflow-hidden" style="z-index: 4;">
 			<div id="pointer-layer" style="top: {mousePostion.y}px; left: {mousePostion.x}px;" />
 		</div>
 		<div class="relative p-8 max-w-[1440px] mx-auto" style="z-index: 5;">
