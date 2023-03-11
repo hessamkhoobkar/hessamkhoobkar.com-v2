@@ -12,7 +12,7 @@
 <div class="h-screen w-screen grid grid-rows-4 grid-cols-1">
 	<div class="col-span-1 row-span-2 md:row-span-3 custom-gradient overflow-hidden relative">
 		<div
-			class="font-headSans text-9xl text-gray-1000 uppercase fixed top-2 left-0 whitespace-nowrap flex justify-start items-start"
+			class="font-headSans text-5xl md:text-9xl text-gray-1000 uppercase fixed top-2 left-0 whitespace-nowrap flex justify-start items-start"
 		>
 			<div class="marquee">
 				<span> * Hessam Khoobkar </span>
@@ -25,19 +25,21 @@
 				<span class="mr-8"> * Hessam Khoobkar </span>
 			</div>
 		</div>
-		<div class="h-full w-2/3 ml-36 md:w-9/12 xl:w-[50rem] xl:ml-[20%] relative">
+		<div class="h-full w-2/3 ml-32 md:w-9/12 md:ml-36 xl:w-[50rem] xl:ml-[20%] relative">
 			<div class="absolute bottom-4 flex flex-col justify-start items-start gap-1">
 				<span class="text-base text-white font-bold">hessam khoobkar</span>
-				<span class="text-xl text-white font-bold">UI Designer / Front-end Developer</span>
+				<span class="text-xl text-white font-bold">
+					UI Designer / <span class="w-full block md:hidden" /> Front-end Developer
+				</span>
 			</div>
 		</div>
 	</div>
 	<div class="col-span-1 row-span-2 md:row-span-1 bg-white">
 		<div
-			class="content h-full w-2/3 ml-36 md:w-9/12 xl:w-[50rem] xl:ml-[20%] pt-4 pb-3 flex flex-col justify-between items-start relative"
+			class="content h-full w-11/12 ml-4 md:w-9/12 md:ml-36 xl:w-[50rem] xl:ml-[20%] pt-4 pb-3 flex flex-col justify-between items-start relative"
 		>
 			<img
-				class="rounded-xl absolute h-24 w-24 border-2 border-gray-1000 -left-32 -top-16"
+				class="rounded-xl absolute h-24 w-24 border-2 border-gray-1000 -top-28 md:-left-32 md:-top-16"
 				src={Profile}
 				alt="Me standing in front of some histrorical building with perisan style design in blue and cyan colors"
 			/>
@@ -60,7 +62,7 @@
 							{href}
 							target="_blank"
 							rel="noreferrer"
-							class="not px-6 first:pl-0 hover:text-sky-500 duration-150"
+							class="not px-4 md:px-6 first:pl-0 hover:text-sky-500 duration-150"
 						>
 							{label}
 						</a>
@@ -68,7 +70,7 @@
 					{/each}
 				</div>
 
-				<span>
+				<span class="max-md:hidden">
 					Working on
 					<a href="/dashboard" class="hover:text-sky-500 duration-150"> V2 </a>
 				</span>
