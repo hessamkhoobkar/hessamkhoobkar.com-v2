@@ -10,7 +10,7 @@
 </script>
 
 <div class="h-screen w-screen grid grid-rows-4 grid-cols-1">
-	<div class="col-span-1 row-span-3 custom-gradient overflow-hidden relative">
+	<div class="col-span-1 row-span-2 md:row-span-3 custom-gradient overflow-hidden relative">
 		<div
 			class="font-headSans text-9xl text-gray-1000 uppercase fixed top-2 left-0 whitespace-nowrap flex justify-start items-start"
 		>
@@ -25,16 +25,16 @@
 				<span class="mr-8"> * Hessam Khoobkar </span>
 			</div>
 		</div>
-		<div class="h-full w-[50rem] ml-[20%] relative">
+		<div class="h-full w-2/3 ml-36 md:w-9/12 xl:w-[50rem] xl:ml-[20%] relative">
 			<div class="absolute bottom-4 flex flex-col justify-start items-start gap-1">
 				<span class="text-base text-white font-bold">hessam khoobkar</span>
 				<span class="text-xl text-white font-bold">UI Designer / Front-end Developer</span>
 			</div>
 		</div>
 	</div>
-	<div class="col-span-1 row-span-1 bg-white">
+	<div class="col-span-1 row-span-2 md:row-span-1 bg-white">
 		<div
-			class="content h-full w-[50rem] ml-[20%] pt-4 pb-3 flex flex-col justify-between items-start relative"
+			class="content h-full w-2/3 ml-36 md:w-9/12 xl:w-[50rem] xl:ml-[20%] pt-4 pb-3 flex flex-col justify-between items-start relative"
 		>
 			<img
 				class="rounded-xl absolute h-24 w-24 border-2 border-gray-1000 -left-32 -top-16"
@@ -52,7 +52,7 @@
 				project.
 			</p>
 			<div
-				class="text-gray-400 text-xs leading-snug font-bold w-full flex justify-between items-center"
+				class="text-gray-400 text-xs leading-snug font-bold fixed inset-x-6 bottom-4 md:relative md:w-full md:inset-x-0 md:bottom-0 flex justify-between items-center "
 			>
 				<div class="flex justify-start items-center">
 					{#each links as { label, href }}
