@@ -4,7 +4,7 @@
 	import UserCard from '../sidenav/UserCard.svelte';
 </script>
 
-<div class="nav-bg w-80 h-screen p-4 pt-8 flex flex-col">
+<div class="nav-bg w-full h-full p-4 pt-8 flex flex-col">
 	<LogoCombo class="mb-12" />
 	<div class="flex-grow">
 		<Navigation />
