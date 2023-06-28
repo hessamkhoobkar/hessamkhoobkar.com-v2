@@ -157,7 +157,7 @@
 	</div>
 </div>
 
-<style>
+<style lang="postcss">
 	.hero {
 		background: radial-gradient(
 				40% 95% at 50% 0%,
