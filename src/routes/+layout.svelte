@@ -15,11 +15,11 @@
 	/>
 </svelte:head>
 
-<div>
+<div class="bg-gray-900">
 	<div class="fixed w-80 inset-y-0 left-0 z-10">
 		<SideNav />
 	</div>
-	<div class="ml-80 p-8 min-h-screen max-w-[1440px] mx-auto bg-gray-900">
+	<div class="ml-80 min-h-screen bg-gray-900">
 		<slot />
 	</div>
 </div>
