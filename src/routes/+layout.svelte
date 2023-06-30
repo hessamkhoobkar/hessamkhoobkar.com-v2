@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
-	import SideNav from '@/components/layout/SideNav.svelte';
+
+	import SideNavWrap from '@/components/layout/SideNavWrap.svelte';
 </script>
 
 <svelte:head>
@@ -15,11 +16,15 @@
 	/>
 </svelte:head>
 
+<!-- Todo
+
+1. make header sticky or not
+
+-->
+
 <div class="bg-gray-900">
-	<div class="fixed w-80 inset-y-0 left-0 z-10">
-		<SideNav />
-	</div>
-	<div class="ml-80 min-h-screen bg-gray-900">
+	<SideNavWrap />
+	<div class="lg:ml-80 min-h-screen bg-gray-900">
 		<slot />
 	</div>
 </div>
