@@ -1,11 +1,28 @@
 <script lang="ts">
+	import { createEventDispatcher } from 'svelte';
+
 	import LogoCombo from '../../assets/images/LogoCombo.svelte';
 	import Navigation from '../sidenav/Navigation.svelte';
 	import UserCard from '../sidenav/UserCard.svelte';
+	import Close from '@/assets/icons/Close.svelte';
+
+	const dispatch = createEventDispatcher();
+
+	function handleToggle() {
+		dispatch('toggleMenu');
+	}
 </script>
 
 <div class="nav-bg w-full h-full p-4 pt-8 flex flex-col">
-	<LogoCombo class="mb-12" />
+	<div class="flex justify-between items-center mb-12">
+		<LogoCombo />
+		<button
+			class="bg-[#111827] rounded-xl p-3 flex justify-center items-center lg:hidden"
+			on:click={handleToggle}
+		>
+			<Close class="w-6 h-6" />
+		</button>
+	</div>
 	<div class="flex-grow">
 		<Navigation />
 	</div>
