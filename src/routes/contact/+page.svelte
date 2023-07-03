@@ -17,9 +17,17 @@
 	];
 </script>
 
-<div class="flex flex-col justify-start items-start gap-12">
+<!-- 
+	ToDo
+	1. Connect the form to the page
+	2. Add a success message for submisstion of the form
++
+	5. Abstract Hero section
+ -->
+
+<div class="flex flex-col justify-start items-start xl:gap-12">
 	<!-- Hero -->
-	<div class="bg-[#18202F] w-full h-[30rem] hero">
+	<div class="bg-[#18202F] w-full xl:h-[30rem] hero">
 		<div class="w-full max-w-[1440px] mx-auto p-8">
 			<div class="w-full max-w-2xl mx-auto">
 				<h2 class="text-5xl mb-8">Welcome to my contact page</h2>
@@ -40,9 +48,9 @@
 		</div>
 	</div>
 	<!-- Body -->
-	<div class="w-full max-w-[1440px] mx-auto p-8">
-		<div class="flex justify-start items-stretch gap-4 w-full -mt-40">
-			<div class="bg-[#18202F] w-1/2 p-4 rounded-2xl thecard">
+	<div class="w-full max-w-[1440px] mx-auto p-4 xl:p-8">
+		<div class="flex flex-col xl:flex-row justify-start items-stretch gap-4 w-full xl:-mt-40">
+			<div class="bg-[#18202F] w-full xl:w-1/2 p-4 rounded-2xl thecard">
 				<!-- <form
 					id="fs-frm"
 					name="simple-contact-form"
@@ -56,7 +64,7 @@
 					method="post"
 					class="flex flex-col justify-start items-start gap-6 w-full"
 				>
-					<div class="flex justify-start items-start gap-6 w-full">
+					<div class="flex flex-col xl:flex-row justify-start items-start gap-6 w-full">
 						<div class="flex flex-col justify-start items-start gap-2 w-full">
 							<label for="full-name">Full Name</label>
 							<input
@@ -115,7 +123,7 @@
 					/>
 				</form>
 			</div>
-			<div class="w-1/2 flex flex-col justify-start items-start gap-4">
+			<div class="w-full xl:w-1/2 flex flex-col justify-start items-start gap-4">
 				<div class="bg-[#18202F] w-full p-4 rounded-2xl thecard">
 					<img class="rounded-xl" src={MyImage} alt="" />
 				</div>
@@ -137,12 +145,12 @@
 			</div>
 		</div>
 
-		<div class=" max-w-[1440px] py-8">
-			<div class="w-full flex justify-start items-start gap-4">
+		<div class="max-w-[1440px] py-8">
+			<div class="w-full flex flex-row flex-wrap xl:flex-nowrap justify-start items-start gap-4">
 				{#each linkData as { label, href, icon }}
 					<a
 						{href}
-						class="bg-[#18202F] grow flex flex-col justify-center items-center py-8 rounded-2xl gap-3 hover:bg-gray-800 transition-all duration-200 ease-in-out group"
+						class="bg-[#18202F] max-xl:w-5/12 grow flex flex-col justify-center items-center py-8 rounded-2xl gap-3 hover:bg-gray-800 transition-all duration-200 ease-in-out group"
 					>
 						<svelte:component
 							this={icon}

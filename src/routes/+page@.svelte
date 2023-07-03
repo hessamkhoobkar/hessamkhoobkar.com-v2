@@ -12,7 +12,7 @@
 	];
 </script>
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 gap-6">
 	{#each summaryData as { title, value, subNote }}
 		<div class="col-span-4 p-4 rounded-2xl bg-gray-850 shadow-lg shadow-gray-900">
 			<p class="text-base mb-6">

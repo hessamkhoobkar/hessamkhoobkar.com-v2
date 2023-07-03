@@ -24,7 +24,7 @@
 
 <div class="bg-gray-900">
 	<SideNavWrap />
-	<div class="lg:ml-80 min-h-screen bg-gray-900">
+	<div class="xl:ml-80 min-h-screen bg-gray-900">
 		<slot />
 	</div>
 </div>

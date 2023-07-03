@@ -17,7 +17,7 @@
 	<div class="flex justify-between items-center mb-12">
 		<LogoCombo />
 		<button
-			class="bg-[#111827] rounded-xl p-3 flex justify-center items-center lg:hidden"
+			class="bg-[#111827] rounded-xl p-3 flex justify-center items-center xl:hidden"
 			on:click={handleToggle}
 		>
 			<Close class="w-6 h-6" />
