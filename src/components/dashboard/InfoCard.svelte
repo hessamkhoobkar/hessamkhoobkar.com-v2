@@ -3,7 +3,7 @@
 	import Profile from '@/assets/images/profile-pic.png';
 </script>
 
-<div class="bg-gray-850 shadow-lg shadow-gray-900 rounded-2xl p-2 col-span-9">
+<div class="bg-gray-850 shadow-lg shadow-gray-900 rounded-2xl p-2 col-span-8">
 	<!-- Cover -->
 	<div class="relative">
 		<img
