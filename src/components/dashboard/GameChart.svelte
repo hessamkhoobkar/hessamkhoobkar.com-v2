@@ -50,7 +50,7 @@
 	});
 </script>
 
-<div class="bg-gray-850 shadow-lg shadow-gray-900 rounded-2xl p-6 col-span-6">
+<div class="bg-gray-800 shadow-lg shadow-gray-900 rounded-2xl p-6 col-span-6">
 	<h3
 		class="text-lg mb-4 font-black bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-teal-500 uppercase"
 	>

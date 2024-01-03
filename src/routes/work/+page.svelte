@@ -41,7 +41,7 @@
 	<!-- Card List -->
 	{#each workData as work}
 		<!-- content here -->
-		<div class="flex justify-start items-stretch p-6 gap-6 w-full max- bg-gray-850 rounded-2xl">
+		<div class="flex justify-start items-stretch p-6 gap-6 w-full max- bg-gray-800 rounded-2xl">
 			<div class="w-1/2 h-96 flex flex-col justify-between items-start">
 				<div class="w-full flex justify-start items-start flex-wrap">
 					<h2 class="text-5xl font-bold mb-6">{work.title}</h2>

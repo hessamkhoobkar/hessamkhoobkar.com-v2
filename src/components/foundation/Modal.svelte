@@ -45,20 +45,20 @@
 <svelte:window on:keydown={handle_keydown} />
 
 <div
-	class="fixed inset-0 w-screen h-screen bg-gray-1000 bg-opacity-70 cursor-pointer z-40"
+	class="fixed inset-0 w-screen h-screen bg-gray-900 bg-opacity-90 backdrop-blur-sm cursor-pointer z-40"
 	on:click={close}
 	on:keydown={handle_keydown}
 />
 
 <div
-	class="fixed top-1/2 left-1/2 -translate-y-2/4 -translate-x-2/4 w-[calc(100vw - 4rem)] max-w-lg max-h-[calc(100vh - 4rem)] bg-gray-850 rounded-2xl z-50"
+	class="fixed top-1/2 left-1/2 -translate-y-2/4 -translate-x-2/4 w-[calc(100vw - 4rem)] max-w-lg max-h-[calc(100vh - 4rem)] bg-gray-700 rounded-2xl z-50"
 	role="dialog"
 	aria-modal="true"
 	bind:this={modal}
 >
 	<!-- svelte-ignore a11y-autofocus -->
 	<button
-		class="absolute -top-12 right-0 flex justify-center items-center rounded-2xl px-4 py-2 bg-gray-850 text-white border border-transparent hover:text-red-500 hover:border-red-500 focus:outline-none focus:text-red-500 focus:border-red-500 transition-colors duration-200 ease-in-out"
+		class="absolute -top-12 right-0 flex justify-center items-center rounded-2xl px-4 py-2 bg-gray-800 text-white border border-transparent hover:text-red-500 hover:border-red-500 focus:outline-none focus:text-red-500 focus:border-red-500 transition-colors duration-200 ease-in-out"
 		autofocus
 		on:click={close}
 	>
