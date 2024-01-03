@@ -16,9 +16,9 @@
 	/>
 </svelte:head>
 
-<div class="bg-gray-900 ">
-	<SideNavWrap />
-	<div class="xl:ml-80 min-h-screen bg-gray-900">
+<SideNavWrap />
+<div class="min-h-screen xl:ml-80">
+	<div class="w-full max-w-screen-2xl p-4 bg-gray-900">
 		<slot />
 	</div>
 </div>
