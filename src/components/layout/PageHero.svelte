@@ -17,6 +17,6 @@
 	}
 </script>
 
-<div class="w-full max-w-[1440px] mx-auto rounded-2xl mt-6 xl:h-[32rem] font-medium {variantStyle}">
+<div class="w-full rounded-2xl mt-4 xl:h-[32rem] font-medium {variantStyle}">
 	<slot />
 </div>

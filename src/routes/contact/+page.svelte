@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Buttton from '@/components/foundation/Button/Buttton.svelte';
-
 	import MyImage from '@/assets/images/me-welcoming.webp';
 	import Dribbble from '@/assets/icons/Dribbble.svelte';
 	import Gmail from '@/assets/icons/Gmail.svelte';
@@ -22,15 +20,13 @@
 	ToDo
 	1. Connect the form to the page
 	2. Add a success message for submisstion of the form
-+
-	5. Abstract Hero section
  -->
 
-<div class="flex flex-col justify-start items-start xl:gap-12">
+<div class="w-full flex flex-col justify-start items-start xl:gap-12">
 	<!-- Hero -->
 	<PageHero variant="primary">
-		<div class="w-full max-w-4xl px-12 pt-16">
-			<h2 class="text-5xl font-black mb-8">Welcome to contacting page</h2>
+		<div class="w-full max-w-4xl p-4 xl:px-12 xl:pt-16">
+			<h2 class="text-5xl font-black mb-8">Welcome to the contact page</h2>
 			<p class="mb-4">
 				I'm thrilled that you're interested in getting in touch. Whether you have a question, a
 				collaboration idea, or simply want to say hello, I'd love to hear from you. Communication is
@@ -48,11 +44,11 @@
 	</PageHero>
 
 	<!-- Body -->
-	<div class="w-full max-w-[1440px] mx-auto p-4 xl:p-8">
+	<div class="w-full mt-4 xl:p-8">
 		<div
 			class="flex flex-col xl:flex-row justify-start items-stretch gap-4 w-full xl:-mt-40 text-gray-400 font-medium"
 		>
-			<div class="bg-gray-800 w-full xl:w-1/2 p-4 rounded-2xl">
+			<div class="bg-gray-800 border border-gray-700 w-full xl:w-1/2 p-4 rounded-2xl">
 				<form
 					id="fs-frm"
 					name="simple-contact-form"
@@ -110,10 +106,10 @@
 				</form>
 			</div>
 			<div class="w-full xl:w-1/2 flex flex-col justify-start items-start gap-4">
-				<div class="bg-gray-800 w-full p-4 rounded-2xl">
+				<div class="bg-gray-800 border border-gray-700 w-full p-4 rounded-2xl">
 					<img class="rounded-xl" src={MyImage} alt="" />
 				</div>
-				<div class="bg-gray-800 w-full p-4 rounded-2xl">
+				<div class="bg-gray-800 border border-gray-700 w-full p-4 rounded-2xl">
 					<p class="mb-4">
 						The king had recently lost his wife and son during childbirth and was thoroughly
 						depressed, crying himself to sleep every night. He sought out a ring that would cheer
@@ -131,12 +127,12 @@
 			</div>
 		</div>
 
-		<div class="max-w-[1440px] py-8">
+		<div class="w-full py-8">
 			<div class="w-full flex flex-row flex-wrap xl:flex-nowrap justify-start items-start gap-4">
 				{#each linkData as { label, href, icon }}
 					<a
 						{href}
-						class="bg-gray-800 max-xl:w-5/12 grow flex flex-col justify-center items-center py-8 rounded-2xl gap-3 hover:bg-gray-800 transition-all duration-200 ease-in-out group"
+						class="bg-gray-800 border border-gray-700 max-xl:w-5/12 grow flex flex-col justify-center items-center py-8 rounded-2xl gap-3 hover:bg-gray-800 hover:border-primary-500 transition-all duration-200 ease-in-out group"
 					>
 						<svelte:component
 							this={icon}
@@ -153,7 +149,7 @@
 
 <style lang="postcss">
 	.input {
-		@apply w-full px-4 py-4 rounded-xl bg-gray-700 bg-opacity-70 border border-transparent transition-all duration-200 ease-in-out ring-0 outline-none text-white;
+		@apply w-full px-4 py-4 rounded-xl bg-gray-700 bg-opacity-70 border border-gray-600 transition-all duration-200 ease-in-out ring-0 outline-none text-white;
 	}
 
 	.input::placeholder {

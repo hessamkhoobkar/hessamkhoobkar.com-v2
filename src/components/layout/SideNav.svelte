@@ -13,7 +13,7 @@
 	}
 </script>
 
-<div class="nav-bg bg-gray-900 w-full h-full pt-8 flex flex-col border-r border-gray-700">
+<div class="bg-gray-900 w-full h-full pt-8 flex flex-col border-r border-gray-600">
 	<div class="flex justify-between items-center px-7 mb-10">
 		<img src={LogoCombo} alt="" />
 		<button
@@ -28,21 +28,3 @@
 	</div>
 	<UserCard />
 </div>
-
-<!-- <style>
-	.nav-bg {
-		background: linear-gradient(
-				0deg,
-				rgba(254, 91, 47, 0) 0%,
-				rgba(254, 91, 47, 0) 65%,
-				rgba(254, 91, 47, 0) 100%
-			),
-			linear-gradient(
-				220deg,
-				rgba(254, 91, 47, 0) 2.5%,
-				rgba(254, 91, 47, 0.1) 17.5%,
-				rgba(254, 91, 47, 0) 32.5%
-			),
-			#12151b;
-	}
-</style> -->

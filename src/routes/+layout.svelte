@@ -18,7 +18,7 @@
 
 <SideNavWrap />
 <div class="min-h-screen xl:ml-80">
-	<div class="w-full max-w-screen-2xl p-4 bg-gray-900">
+	<div class="w-full max-w-screen-2xl mx-auto p-4 bg-gray-900">
 		<slot />
 	</div>
 </div>

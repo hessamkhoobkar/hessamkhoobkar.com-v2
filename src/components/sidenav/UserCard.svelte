@@ -21,7 +21,7 @@
 	];
 </script>
 
-<div class="w-full bg-gray-900 p-4 border-t border-gray-700">
+<div class="w-full bg-gray-900 p-4 border-t border-gray-600">
 	<!-- Personal info -->
 	<div class="flex gap-4 w-full mb-8">
 		<img src={Avatar} class="w-12 h-12 rounded-xl" alt="my self in frint of a wall" />
