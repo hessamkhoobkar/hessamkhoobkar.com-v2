@@ -74,7 +74,7 @@
 	];
 </script>
 
-<div class="relative bg-gray-850 shadow-lg shadow-gray-900 rounded-2xl p-6 pb-12 col-span-6">
+<div class="relative bg-gray-800 shadow-lg shadow-gray-900 rounded-2xl p-6 pb-12 col-span-6">
 	<h3
 		class="text-lg mb-4 font-black bg-clip-text text-transparent bg-gradient-to-tr from-sky-500 to-teal-500 uppercase"
 	>

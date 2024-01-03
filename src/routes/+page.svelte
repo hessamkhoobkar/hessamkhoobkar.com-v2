@@ -18,7 +18,7 @@
 	class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 gap-6 w-full max-w-[1440px] mx-auto p-8"
 >
 	{#each summaryData as { title, value, subNote }}
-		<div class="col-span-4 p-4 rounded-2xl bg-gray-850 shadow-lg shadow-gray-900">
+		<div class="col-span-4 p-4 rounded-2xl bg-gray-800 shadow-lg shadow-gray-900">
 			<p class="text-base mb-6">
 				{title}
 			</p>

@@ -16,13 +16,7 @@
 	/>
 </svelte:head>
 
-<!-- Todo
-
-1. make header sticky or not
-
--->
-
-<div class="bg-gray-900 font-sans antialiased text-base">
+<div class="bg-gray-900 ">
 	<SideNavWrap />
 	<div class="xl:ml-80 min-h-screen bg-gray-900">
 		<slot />
@@ -31,8 +25,12 @@
 
 <style lang="postcss">
 	:global(html) {
+		@apply antialiased;
+		scroll-behavior: smooth;
 		color: theme(colors.gray.100);
-		@apply bg-gray-1000;
+		font-size: theme(fontSize.base);
+		font-family: theme(fontFamily.sans);
+		background-color: theme(colors.gray.900);
 	}
 
 	:global(.article-content h3) {
@@ -48,5 +46,23 @@
 		line-height: 1.5em;
 		font-weight: normal;
 		margin-bottom: 1rem;
+	}
+
+	:global(::-webkit-scrollbar) {
+		width: 10px;
+	}
+
+	:global(::-webkit-scrollbar-track) {
+		box-shadow: inset 0 0 1px #a8aaaf;
+		border-radius: 0px;
+	}
+
+	:global(::-webkit-scrollbar-thumb) {
+		background: #fe5b2f;
+		border-radius: 0px;
+	}
+
+	:global(::-webkit-scrollbar-thumb:hover) {
+		background: #fe5b2f;
 	}
 </style>

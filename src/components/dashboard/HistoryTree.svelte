@@ -29,7 +29,7 @@
 <div class="w-7/12 flex flex-col justify-start items-start gap-6">
 	{#each workHistory as { title, details, tools, isLink }}
 		{#if !isLink}
-			<div class="bg-gray-850 shadow-lg shadow-gray-900 rounded-2xl p-6 pb-8 w-full relative">
+			<div class="bg-gray-800 shadow-lg shadow-gray-900 rounded-2xl p-6 pb-8 w-full relative">
 				<div class="absolute top-0 left-0 h-full">
 					<div class="absolute bg-[#111827] top-0 left-8 w-2 h-full " />
 					<div

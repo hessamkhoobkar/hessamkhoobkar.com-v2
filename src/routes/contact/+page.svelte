@@ -7,6 +7,7 @@
 	import Linkedin from '@/assets/icons/Linkedin.svelte';
 	import Telegram from '@/assets/icons/Telegram.svelte';
 	import Whatsapp from '@/assets/icons/Whatsapp.svelte';
+	import PageHero from '@/components/layout/PageHero.svelte';
 
 	const linkData = [
 		{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/hessam-khoobkar/', icon: Linkedin },
@@ -27,37 +28,31 @@
 
 <div class="flex flex-col justify-start items-start xl:gap-12">
 	<!-- Hero -->
-	<div class="bg-[#18202F] w-full xl:h-[30rem] hero">
-		<div class="w-full max-w-[1440px] mx-auto p-8">
-			<div class="w-full max-w-2xl mx-auto">
-				<h2 class="text-5xl mb-8">Welcome to my contact page</h2>
-				<p class="mb-4">
-					I'm thrilled that you're interested in getting in touch. Whether you have a question, a
-					collaboration idea, or simply want to say hello, I'd love to hear from you. Communication
-					is key, and I'm here to ensure that connecting with me is easy and convenient.
-				</p>
-				<p class="mb-4">
-					I value your feedback, suggestions, and ideas, so please don't hesitate to share them.
-					Your input helps me continually improve and create content that resonates with you.
-				</p>
-				<p>
-					Thank you for taking the time to visit my website and explore what I have to offer. I'm
-					excited to connect with you and look forward to hearing from you soon!
-				</p>
-			</div>
+	<PageHero variant="primary">
+		<div class="w-full max-w-4xl px-12 pt-16">
+			<h2 class="text-5xl font-black mb-8">Welcome to contacting page</h2>
+			<p class="mb-4">
+				I'm thrilled that you're interested in getting in touch. Whether you have a question, a
+				collaboration idea, or simply want to say hello, I'd love to hear from you. Communication is
+				key, and I'm here to ensure that connecting with me is easy and convenient.
+			</p>
+			<p class="mb-4">
+				I value your feedback, suggestions, and ideas, so please don't hesitate to share them. Your
+				input helps me continually improve and create content that resonates with you.
+			</p>
+			<p>
+				Thank you for taking the time to visit my website and explore what I have to offer. I'm
+				excited to connect with you and look forward to hearing from you soon!
+			</p>
 		</div>
-	</div>
+	</PageHero>
+
 	<!-- Body -->
 	<div class="w-full max-w-[1440px] mx-auto p-4 xl:p-8">
-		<div class="flex flex-col xl:flex-row justify-start items-stretch gap-4 w-full xl:-mt-40">
-			<div class="bg-[#18202F] w-full xl:w-1/2 p-4 rounded-2xl thecard">
-				<!-- <form
-					id="fs-frm"
-					name="simple-contact-form"
-					accept-charset="utf-8"
-					action="https://formspree.io/f/{form_id}"
-					method="post"
-				> -->
+		<div
+			class="flex flex-col xl:flex-row justify-start items-stretch gap-4 w-full xl:-mt-40 text-gray-400 font-medium"
+		>
+			<div class="bg-gray-800 w-full xl:w-1/2 p-4 rounded-2xl">
 				<form
 					id="fs-frm"
 					name="simple-contact-form"
@@ -107,27 +102,18 @@
 							placeholder="Type your message here. Your feedback is valuable to me and I will respond as soon as possible."
 						/>
 					</div>
-					<!-- <div class="flex justify-start items-center gap-2 bg-[#151D2D] rounded-xl p-4">
-						<input class="check-box" type="checkbox" name="flash" id="as-flash" />
-						<div class="flex flex-col justify-start items-start gap-2">
-							<label for="as-flash">Beep beep, boop boop?</label>
-							<span class="text-xs text-gray-500"
-								>Check the box if you are from the flesh kind?</span
-							>
-						</div>
-					</div> -->
 					<input
-						class="w-full py-5 bg-sky-500 flex justify-center items-center rounded-xl text-gray-900 font-bold cursor-pointer mt-4 hover:bg-sky-600 hover:text-white transition-all duration-200 ease-in-out active:bg-sky-700"
+						class="bg-gradient-to-br from-primary-500 to-tertiary-500 border-primary-600 flex justify-center items-center rounded-xl w-full py-5 text-gray-900 font-bold cursor-pointer mt-4 hover:to-primary-600 transition-all duration-200 ease-in-out active:to-primary-700"
 						type="submit"
 						value="Send Message"
 					/>
 				</form>
 			</div>
 			<div class="w-full xl:w-1/2 flex flex-col justify-start items-start gap-4">
-				<div class="bg-[#18202F] w-full p-4 rounded-2xl thecard">
+				<div class="bg-gray-800 w-full p-4 rounded-2xl">
 					<img class="rounded-xl" src={MyImage} alt="" />
 				</div>
-				<div class="bg-[#18202F] w-full p-4 rounded-2xl shadow-lg text-[#4F5D72]">
+				<div class="bg-gray-800 w-full p-4 rounded-2xl">
 					<p class="mb-4">
 						The king had recently lost his wife and son during childbirth and was thoroughly
 						depressed, crying himself to sleep every night. He sought out a ring that would cheer
@@ -139,7 +125,7 @@
 						the scholar, now not so young, was sought out to advise the king and perhaps suggest a
 						phrase. Shortly thereafter, a ring appeared from the scholar with a phrase inscribed
 						inside of the gold and ruby ring:
-						<span class="text-white capitalize font-bold"> this too shall pass </span>
+						<span class="text-tertiary-500 capitalize font-bold"> this too shall pass </span>
 					</p>
 				</div>
 			</div>
@@ -150,12 +136,12 @@
 				{#each linkData as { label, href, icon }}
 					<a
 						{href}
-						class="bg-[#18202F] max-xl:w-5/12 grow flex flex-col justify-center items-center py-8 rounded-2xl gap-3 hover:bg-gray-800 transition-all duration-200 ease-in-out group"
+						class="bg-gray-800 max-xl:w-5/12 grow flex flex-col justify-center items-center py-8 rounded-2xl gap-3 hover:bg-gray-800 transition-all duration-200 ease-in-out group"
 					>
 						<svelte:component
 							this={icon}
 							size="32"
-							class="opacity-30 group-hover:opacity-100 group-hover:text-sky-500 transition-all duration-200 ease-in-out"
+							class="opacity-30 group-hover:opacity-100 group-hover:text-primary-500 transition-all duration-200 ease-in-out"
 						/>
 						<span>{label}</span>
 					</a>
@@ -166,33 +152,19 @@
 </div>
 
 <style lang="postcss">
-	.hero {
-		background: radial-gradient(
-				40% 95% at 50% 0%,
-				rgba(14, 165, 233, 0.15) 0%,
-				rgba(14, 165, 233, 0) 100%
-			),
-			#18202f;
-	}
-
-	.thecard {
-		background: linear-gradient(180deg, rgba(13, 18, 29, 0.2) 0%, rgba(13, 18, 29, 0) 100%), #1a2233;
-		box-shadow: 0px 12px 25px 4px rgba(13, 18, 29, 0.6);
-	}
-
 	.input {
-		@apply w-full px-4 py-4 rounded-xl bg-[#111827] bg-opacity-50 border border-transparent transition-all duration-200 ease-in-out ring-0 outline-none;
+		@apply w-full px-4 py-4 rounded-xl bg-gray-700 bg-opacity-70 border border-transparent transition-all duration-200 ease-in-out ring-0 outline-none text-white;
 	}
 
 	.input::placeholder {
-		@apply text-gray-600;
+		@apply text-gray-400;
 	}
 
 	.input:hover {
-		@apply bg-opacity-90 border-sky-900;
+		@apply bg-opacity-90 border-primary-900;
 	}
 
 	.input:focus {
-		@apply bg-opacity-90 border-sky-500 ring-0 outline-none;
+		@apply bg-opacity-90 border-primary-500 ring-0 outline-none;
 	}
 </style>

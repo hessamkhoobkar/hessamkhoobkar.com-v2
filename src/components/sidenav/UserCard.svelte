@@ -12,55 +12,38 @@
 	import Grineyes from '@/assets/icons/Grineyes.svelte';
 
 	let showModal = false;
+
+	const socialLinks = [
+		{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/hessam-khoobkar/', icon: Linkedin },
+		{ label: 'Instagram', href: 'https://www.instagram.com/hessam_khoobkar/', icon: Instagram },
+		{ label: 'Dribbble', href: 'https://dribbble.com/hessam_khoobkar', icon: Dribbble },
+		{ label: 'Github', href: 'https://github.com/hessamkhoobkar', icon: Github }
+	];
 </script>
 
-<div class="w-full bg-gray-900 rounded-2xl p-4">
+<div class="w-full bg-gray-900 p-4 border-t border-gray-700">
 	<!-- Personal info -->
 	<div class="flex gap-4 w-full mb-8">
 		<img src={Avatar} class="w-12 h-12 rounded-xl" alt="my self in frint of a wall" />
 		<div class="flex flex-col gap-1">
-			<span>Hessam Khoobkar</span>
-			<span class="text-sm text-gray-500">amirhessam.dev@gmail.com</span>
+			<span class="font-bold">Hessam Khoobkar</span>
+			<span class="text-sm text-gray-400">amirhessam.dev@gmail.com</span>
 		</div>
 	</div>
 	<!-- social buttons -->
 	<div class="flex gap-2 w-full mb-3">
-		<Buttton
-			color="plain"
-			variant="outline"
-			size="small"
-			class="flex-grow"
-			href="https://www.linkedin.com/in/hessam-khoobkar/"
-			target="_blank"
-			icon={Linkedin}
-		/>
-		<Buttton
-			color="plain"
-			variant="outline"
-			size="small"
-			class="flex-grow"
-			href="https://www.instagram.com/hessam_khoobkar/"
-			target="_blank"
-			icon={Instagram}
-		/>
-		<Buttton
-			color="plain"
-			variant="outline"
-			size="small"
-			class="flex-grow"
-			href="https://dribbble.com/hessam_khoobkar"
-			target="_blank"
-			icon={Dribbble}
-		/>
-		<Buttton
-			color="plain"
-			variant="outline"
-			size="small"
-			class="flex-grow"
-			href="https://github.com/hessamkhoobkar"
-			target="_blank"
-			icon={Github}
-		/>
+		{#each socialLinks as socialLink}
+			<!-- content here -->
+			<Buttton
+				size="small"
+				color="plain"
+				target="_blank"
+				variant="outline"
+				class="flex-grow"
+				href={socialLink.href}
+				icon={socialLink.icon}
+			/>
+		{/each}
 	</div>
 	<!-- Facade buttons -->
 	<div class="flex flex-col gap-2 w-full">
@@ -84,7 +67,7 @@
 {#if showModal}
 	<Modal on:close={() => (showModal = false)}>
 		<div
-			class="w-24 h-24 rounded-full bg-gradient-to-tr from-sky-900 bg-opacity-50 border-2 border-sky-700 flex justify-center items-center"
+			class="w-24 h-24 rounded-full bg-gradient-to-tr from-primary-700 bg-opacity-50 border-2 border-primary-500 flex justify-center items-center"
 			slot="header"
 		>
 			<Grineyes size="64" />
@@ -92,9 +75,10 @@
 
 		<h2 class="text-3xl font-bold mb-2">Are you serious?</h2>
 
-		<p class="mb-4">
-			Did you try to log me out of my own website? 😄. No hard feelings, though. I'm the one who
-			replicates a user panel as a personal website and put the button there.
+		<p class="mb-4">Did you try to log me out of my own website? 😄.</p>
+		<p>
+			No hard feelings, though. I'm the one who replicates an application dashboard as a personal
+			website and put the button there.
 		</p>
 		<p>
 			I'm glad you were intrigued by the website and curious to see what the logout button would do.
