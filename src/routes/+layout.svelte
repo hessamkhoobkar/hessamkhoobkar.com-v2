@@ -22,7 +22,7 @@
 
 -->
 
-<div class="bg-gray-900">
+<div class="bg-gray-900 font-sans antialiased text-base">
 	<SideNavWrap />
 	<div class="xl:ml-80 min-h-screen bg-gray-900">
 		<slot />
@@ -32,8 +32,6 @@
 <style lang="postcss">
 	:global(html) {
 		color: theme(colors.gray.100);
-		font-size: theme(fontSize.base);
-		font-weight: theme(fontWeight.medium);
 		@apply bg-gray-1000;
 	}
 
