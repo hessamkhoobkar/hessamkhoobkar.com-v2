@@ -40,8 +40,9 @@ module.exports = {
           800: "#984f20",
           900: "#7c401a",
         }
-
-
+      },
+      screens: {
+        '2xl': '1536px',
       },
       fontFamily: {
         sans: ['"Inter var", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',

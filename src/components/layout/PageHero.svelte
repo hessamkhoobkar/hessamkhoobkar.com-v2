@@ -17,6 +17,6 @@
 	}
 </script>
 
-<div class="w-full rounded-2xl mt-4 min-h-80 font-medium {variantStyle}">
+<div class="w-full rounded-2xl mt-4 min-h-72 font-medium overflow-hidden {variantStyle}">
 	<slot />
 </div>
