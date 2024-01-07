@@ -2,6 +2,9 @@
 	import '../app.css';
 
 	import SideNavWrap from '@/components/layout/SideNavWrap.svelte';
+	import PageTransition from './transition.svelte';
+
+	export let data: any;
 </script>
 
 <svelte:head>
@@ -19,7 +22,9 @@
 <SideNavWrap />
 <div class="min-h-screen xl:ml-80">
 	<div class="w-full max-w-screen-2xl mx-auto p-4 bg-gray-900">
-		<slot />
+		<PageTransition url={data.url}>
+			<slot />
+		</PageTransition>
 	</div>
 </div>
 
