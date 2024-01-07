@@ -1,13 +1,15 @@
 ---
-title: First post
-description: First post.
-date: '2023-4-14'
+title: 'Snø: minimalist astro theme'
+description: 'This is a minimalist astro theme for your blog.'
+date: '2023-11-14'
 published: true
 coverImage: https://picsum.photos/1300/400?grayscale
-coverImageAlt: Cover image
-thumbnail: https://picsum.photos/500/500?grayscale
-thumbnailAlt: Thumbnail image
+coverImageAlt: 'Cover image'
+thumbnail: './src/assets/images/content/snow.jpg'
+thumbnailAlt: 'Thumbnail image'
 ---
+
+welcome to the snow theme and here is some text
 
 ## Markdown
 

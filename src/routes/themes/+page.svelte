@@ -3,6 +3,9 @@
 	import ThemeCard from '@/components/foundation/ThemeCard.svelte';
 
 	import snowCover from '@/assets/images/content/snow.jpg';
+	import { formatDate } from '@/lib/utils.js';
+
+	export let data;
 </script>
 
 <div class="flex flex-col justify-between items-center gap-8">
@@ -22,3 +25,19 @@
 		<ThemeCard />
 	</div>
 </div>
+
+<section>
+	<ul class="posts">
+		{#each data.posts as post}
+			<li class="post">
+				{#if post.thumbnail}
+					<!-- content here -->
+					<img src={post.thumbnail} alt="" />
+				{/if}
+				<a href={`themes/${post.slug}`} class="title">{post.title}</a>
+				<p class="date">{formatDate(post.date)}</p>
+				<p class="description">{post.description}</p>
+			</li>
+		{/each}
+	</ul>
+</section>

@@ -12,18 +12,14 @@
 </svelte:head>
 
 <article>
+	<img src={data.meta.coverImage} alt="" />
+	<img src={data.meta.thumbnail} alt="" />
+
 	<!-- Title -->
 	<hgroup>
 		<h1>{data.meta.title}</h1>
 		<p>Published at {formatDate(data.meta.date)}</p>
 	</hgroup>
-
-	<!-- Tags -->
-	<div class="tags">
-		{#each data.meta.categories as category}
-			<span class="surface-4">&num;{category}</span>
-		{/each}
-	</div>
 
 	<!-- Post -->
 	<div class="prose">

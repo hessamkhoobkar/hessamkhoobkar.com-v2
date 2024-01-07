@@ -5,6 +5,9 @@ export type Post = {
 	slug: string;
 	description: string;
 	date: string;
-	categories: Categories[];
 	published: boolean;
+	coverImage: string;
+	coverImageAlt: string;
+	thumbnail: string;
+	thumbnailAlt: string;
 };

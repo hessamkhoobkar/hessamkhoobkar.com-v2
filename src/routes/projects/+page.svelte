@@ -32,6 +32,10 @@
 	<ul class="posts">
 		{#each data.posts as post}
 			<li class="post">
+				{#if post.coverImage}
+					<!-- content here -->
+					<img src={post.coverImage} alt="" />
+				{/if}
 				<a href={`projects/${post.slug}`} class="title">{post.title}</a>
 				<p class="date">{formatDate(post.date)}</p>
 				<p class="description">{post.description}</p>
