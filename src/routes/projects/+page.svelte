@@ -3,6 +3,10 @@
 	import ProjectCard from '@/components/foundation/ProjectCard.svelte';
 
 	import snowCover from '@/assets/images/content/snow.jpg';
+
+	import { formatDate } from '$lib/utils';
+
+	export let data;
 </script>
 
 <div class="flex flex-col justify-between items-center gap-8">
@@ -23,3 +27,15 @@
 		<ProjectCard />
 	</div>
 </div>
+
+<section>
+	<ul class="posts">
+		{#each data.posts as post}
+			<li class="post">
+				<a href={`projects/${post.slug}`} class="title">{post.title}</a>
+				<p class="date">{formatDate(post.date)}</p>
+				<p class="description">{post.description}</p>
+			</li>
+		{/each}
+	</ul>
+</section>
