@@ -4,7 +4,7 @@
 
 	$: switch (true) {
 		case variant === 'primary':
-			variantStyle = 'bg-gradient-to-tr from-primary-600 to-tertiary-500 text-gray-900';
+			variantStyle = 'bg-gradient-to-br from-primary-600 to-tertiary-500 text-gray-900';
 			break;
 
 		case variant === 'surface':
@@ -17,6 +17,6 @@
 	}
 </script>
 
-<div class="w-full rounded-2xl mt-4 xl:h-[32rem] font-medium {variantStyle}">
+<div class="w-full rounded-2xl mt-4 min-h-80 font-medium {variantStyle}">
 	<slot />
 </div>

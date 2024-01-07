@@ -1,6 +1,6 @@
 <script lang="ts">
 	import PageHero from '@/components/layout/PageHero.svelte';
-	import ThemeCard from '@/components/foundation/ThemeCard.svelte';
+	import ProjectCard from '@/components/foundation/ProjectCard.svelte';
 
 	import snowCover from '@/assets/images/content/snow.jpg';
 </script>
@@ -18,7 +18,8 @@
 	</PageHero>
 
 	<div class="-mt-48 w-full grid grid-cols-3 gap-8 p-8">
-		<ThemeCard title="Snø: minimalist astro theme" image={snowCover} />
-		<ThemeCard />
+		<ProjectCard />
+		<ProjectCard />
+		<ProjectCard />
 	</div>
 </div>

@@ -3,6 +3,7 @@
 
 	import AppleIcon from '@/assets/icons/Apple.svelte';
 	import AtSignIcon from '@/assets/icons/At.svelte';
+	import DeviceCodeIcon from '@/assets/icons/DeviceCode.svelte';
 	import ColorSwatchIcon from '@/assets/icons/ColorSwatch.svelte';
 	import HomeIcon from '@/assets/icons/Home.svelte';
 	import TagsIcon from '@/assets/icons/Tags.svelte';
@@ -11,9 +12,10 @@
 	const links = [
 		{ adress: '/', label: 'Dashboard', icon: HomeIcon, disabled: false },
 		{ adress: '/work', label: 'My Work', icon: AppleIcon, disabled: false },
-		{ adress: '#', label: 'Free Themes', icon: ColorSwatchIcon, disabled: false },
+		{ adress: '/projects', label: 'Projects', icon: DeviceCodeIcon, disabled: false },
+		{ adress: '/themes', label: 'Free Themes', icon: ColorSwatchIcon, disabled: false },
 		{ adress: '#', label: 'Tailwind Collection', icon: TailwindIcon, disabled: true },
-		{ adress: '/services', label: 'My Services', icon: TagsIcon, disabled: true },
+		{ adress: '#', label: 'My Services', icon: TagsIcon, disabled: true },
 		{ adress: '/contact', label: 'Contact Me', icon: AtSignIcon, disabled: false }
 	];
 </script>
