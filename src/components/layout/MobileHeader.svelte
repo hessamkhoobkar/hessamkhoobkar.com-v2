@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
 
-	import LogoCombo from '@/assets/images/LogoCombo.svelte';
+	import khoobkarLogo from '@/assets/images/khoobkar-fulllogo.webp';
 	import Menu from '@/assets/icons/Menu.svelte';
 
 	export let scrollY: number = 0;
@@ -17,7 +17,10 @@
 		? 'fixed inset-x-0'
 		: ''}"
 >
-	<LogoCombo class="scale-75 origin-left" />
+	<img
+		src={khoobkarLogo}
+		alt="The site's logo, a combination of a mark, which is the Persian letter H in a circle, and fully typed hessam khoobkar"
+	/>
 	<button
 		class="bg-[#111827] rounded-xl p-3 flex justify-center items-center"
 		on:click={handleToggle}
