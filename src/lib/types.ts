@@ -10,4 +10,6 @@ export type Post = {
 	coverImageAlt: string;
 	thumbnail: string;
 	thumbnailAlt: string;
+	repository: string;
+	live: string;
 };

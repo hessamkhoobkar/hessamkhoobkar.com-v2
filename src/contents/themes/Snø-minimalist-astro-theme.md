@@ -7,6 +7,8 @@ coverImage: 'http://localhost:5173/content/themes/snow_cover.webp'
 coverImageAlt: 'white background with the Norwegian word for snow in black placed in the top left corner of the image, surrounded by screenshots of the theme'
 thumbnail: 'http://localhost:5173/content/themes/snow_thumbnail.webp'
 thumbnailAlt: 'white background with the Norwegian word for snow in black placed in the top left corner of the image, surrounded by screenshots of the theme'
+repository: 'https://github.com/hessamkhoobkar/sno'
+live: 'https://sno-hessamkhoobkar.vercel.app/'
 ---
 
 ## Introduction
