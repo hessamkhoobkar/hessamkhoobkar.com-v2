@@ -65,7 +65,7 @@
 		<Close size="20" class="mr-1" />
 		<span> Close </span>
 	</button>
-	<div class="p-8">
+	<div class="p-8 py-6">
 		<slot name="header" />
 	</div>
 	<div class="p-8 pt-0">

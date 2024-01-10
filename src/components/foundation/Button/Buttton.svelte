@@ -28,12 +28,12 @@
 	// Size Classes & icon sizes
 	$: btnSize =
 		size === 'small'
-			? 'text-xs h-10'
+			? 'text-xs h-12'
 			: size === 'large'
 			? 'text-baselg h-14 py-4 px-10'
 			: 'text-sm h-12 py-3 px-6';
 
-	$: iconSize = size === 'small' ? '16' : size === 'large' ? '24' : '20';
+	$: iconSize = size === 'small' ? '20' : size === 'large' ? '24' : '20';
 
 	// Variant & Color Classes
 	let variantStyle: string;

@@ -11,7 +11,8 @@
 	import Settings from '@/assets/icons/Settings.svelte';
 	import Grineyes from '@/assets/icons/Grineyes.svelte';
 
-	let showModal = false;
+	let showSettingModal = false;
+	let showLogOutModal = false;
 
 	const socialLinks = [
 		{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/hessam-khoobkar/', icon: Linkedin },
@@ -39,7 +40,7 @@
 				color="plain"
 				target="_blank"
 				variant="outline"
-				class="flex-grow"
+				class="grow"
 				href={socialLink.href}
 				icon={socialLink.icon}
 			/>
@@ -52,20 +53,40 @@
 			variant="outline"
 			label="Setting"
 			icon={Settings}
-			on:click={() => (showModal = true)}
+			on:click={() => (showSettingModal = true)}
 		/>
 		<Buttton
 			color="plain"
 			variant="filled"
 			label="Log out"
 			icon={DoorExit}
-			on:click={() => (showModal = true)}
+			on:click={() => (showLogOutModal = true)}
 		/>
 	</div>
 </div>
 
-{#if showModal}
-	<Modal on:close={() => (showModal = false)}>
+{#if showSettingModal}
+	<Modal on:close={() => (showSettingModal = false)}>
+		<div
+			class="w-24 h-24 rounded-full bg-gradient-to-tr from-primary-700 bg-opacity-50 border-2 border-primary-500 flex justify-center items-center"
+			slot="header"
+		>
+			<Grineyes size="64" />
+		</div>
+
+		<h2 class="text-3xl font-bold mb-4">There are no settings here</h2>
+
+		<p class="mb-2">
+			This is a static website. There's no backend, no database, no user authentication, and no
+			settings.
+		</p>
+
+		<p class="mb-4">But I'm glad you were intrigued by the website.</p>
+	</Modal>
+{/if}
+
+{#if showLogOutModal}
+	<Modal on:close={() => (showLogOutModal = false)}>
 		<div
 			class="w-24 h-24 rounded-full bg-gradient-to-tr from-primary-700 bg-opacity-50 border-2 border-primary-500 flex justify-center items-center"
 			slot="header"
@@ -76,11 +97,11 @@
 		<h2 class="text-3xl font-bold mb-2">Are you serious?</h2>
 
 		<p class="mb-4">Did you try to log me out of my own website? 😄.</p>
-		<p>
+		<p class="mb-2">
 			No hard feelings, though. I'm the one who replicates an application dashboard as a personal
 			website and put the button there.
 		</p>
-		<p>
+		<p class="mb-4">
 			I'm glad you were intrigued by the website and curious to see what the logout button would do.
 		</p>
 	</Modal>
