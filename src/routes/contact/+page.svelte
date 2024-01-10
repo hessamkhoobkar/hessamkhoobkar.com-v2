@@ -25,8 +25,8 @@
 <div class="w-full flex flex-col justify-start items-start xl:gap-12">
 	<!-- Hero -->
 	<PageHero variant="primary">
-		<div class="w-full max-w-4xl p-4 xl:px-12 xl:pt-16">
-			<h2 class="text-5xl font-black mb-8">Welcome to the contact page</h2>
+		<div class="p-6 md:p-10 md:pt-8 max-w-4xl font-medium mb-12">
+			<h2 class="text-5xl font-black mb-4">Welcome to the contact page</h2>
 			<p class="mb-4">
 				I'm thrilled that you're interested in getting in touch. Whether you have a question, a
 				collaboration idea, or simply want to say hello, I'd love to hear from you. Communication is
