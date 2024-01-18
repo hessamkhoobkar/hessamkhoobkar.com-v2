@@ -1,5 +1,5 @@
 ---
-title: Voice Communication System for Air Traffic Control
+title: Modernization of Voice Communication System for Air Traffic Control
 description: Voice Communication System for Air Traffic Control
 date: '2024-1-15'
 published: true
@@ -7,42 +7,35 @@ coverImage: ""
 coverImageAlt: Cover image
 thumbnail: ""
 thumbnailAlt: Thumbnail image
-Client: "Samtech"
-type: "UI Design"
+client: "Samtech"
+role: ["UI Designer"]
+stack: ["Figma"]
 ---
 
-As a UI designer, I recently had the exhilarating opportunity to contribute to a project that transcends the ordinary - the overhaul of a local airport's Voice Communication System (VCS) under the banner of the esteemed Samtech. This venture was not just about updating software; it was about transforming the way air traffic controllers interact with the heart of their operations.
+I had the privilege to contribute to the advancement of a crucial component in air traffic control – the Voice Communication System (VCS). Samtech, our esteemed client, sought to upgrade the existing system to achieve higher levels of reliability and responsiveness. My role in this significant project was to revamp the user interface (UI) of the VCS.
 
-## Unveiling the Canvas
+## Problem Statement
 
-Project Title: Voice Communication System for Air Traffic Control - Samtech
+The challenge lay in balancing modern design principles with the constraints posed by the system's backend, which was rewritten in C and C++. The primary focus was on maintaining simplicity in UI design to align with the VCS's core purpose: ensuring fast and reliable communication in all scenarios.
 
-Mission: Modernize the VCS to usher in a new era of reliability, responsiveness, and contemporary functionality.
+## Your Role and Responsibilities
 
-Navigating UI Design Challenges:
-The VCS, intricately woven in the fabric of C and C++, challenged me to reimagine the UI without compromising the efficiency these languages are known for. The crux lay in harmonizing modern aesthetics with the practicality required for a system geared towards swift and reliable communication.
+As the UI designer for this project, my responsibilities included understanding the intricate requirements of air traffic control, translating them into an intuitive interface, and ensuring a seamless user experience. The decision to streamline the UI complexity was a strategic choice, considering the technical limitations of the backend.
 
-## Crafting the Symphony
+## Solution
 
-Usability Masterstroke:
+I redesigned the UI with a focus on improving usability and overall user experience. Despite the constraints imposed by the backend technologies, I implemented a touch-friendly interface, making it easier for air traffic controllers to interact with the system efficiently. Additionally, I introduced an innovative theme that automatically adjusted between light and dark modes based on the time of day, enhancing user comfort during extended usage.
 
-At the helm of the redesign, I orchestrated a UI that not only elevated usability but transformed the overall user experience.
-Simplicity took center stage, striking a chord that resonated with air traffic controllers, ensuring a seamless interface for swift and effective communication.
-Touch-Friendly Overture:
+## Key Features
 
-The crescendo of my efforts materialized in a touch-friendly interface, a nod to the evolving preferences and technological trends in user interaction.
-This design revolution simplified interactions, allowing air traffic controllers to navigate the system effortlessly.
-Dynamic Theme Ballet:
+Improved usability through a streamlined UI design.
+Implementation of a touch-friendly interface for enhanced interaction.
+Dynamic theme adjustment for optimal user comfort – light mode for day, dark mode for night.
 
-I choreographed a visually enchanting theme that danced between light and dark modes, adapting gracefully to the ebb and flow of the day.
-This dynamic feature wasn't just about aesthetics; it was about ensuring user comfort during the long hours spent managing the system.
-Harmony of Approval:
+## Results and Impact
 
-The symphony struck a chord with users who lauded the intuitive design and visual allure of the revamped UI.
-The system, once a mere tool, had now become an instrument of seamless communication and efficient control.
-Conclusion:
-The Voice Communication System for Air Traffic Control, curated alongside Samtech, narrates a story of collaboration between technology and design. This wasn't just a redesign; it was a transformation, a commitment to crafting a safer and more efficient air traffic control environment where technology dances in step with user needs.
+The revamped UI received positive feedback from users, who appreciated its intuitive design and visually appealing elements. The touch-friendly interface significantly improved the overall user experience, contributing to smoother interactions within the air traffic control environment. The dynamic theme adjustment was well-received, aligning the system with the natural circadian rhythm and reducing eye strain during extended usage.
 
-As the aircraft continue to trace new patterns in the skies, our technology, like a vigilant guide, ensures their safe journey. With Samtech's VCS, we don't just communicate; we soar.
+## Conclusion
 
-Soaring high, painting the skies with innovation – Samtech's VCS, where the future of air traffic control takes flight. ✈️🌐
+I take pride in contributing to the modernization of the Voice Communication System, ensuring it remains a reliable and user-friendly tool for air traffic controllers. The positive reception from users underscores the success of the UI redesign in making their critical tasks more efficient and visually engaging.
