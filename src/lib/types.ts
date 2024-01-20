@@ -10,6 +10,12 @@ export type Post = {
 	coverImageAlt: string;
 	thumbnail: string;
 	thumbnailAlt: string;
+	thumbnailArray: { url: string; alt: string }[];
+	client: string;
+	role: [];
+	ProjectDuration: string;
+	year: string;
+	stack: [];
 	repository: string;
 	live: string;
 };
