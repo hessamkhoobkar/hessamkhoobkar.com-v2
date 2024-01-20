@@ -1,12 +1,21 @@
 ---
-title: First post
-description: First post.
-date: '2023-4-14'
+title: Modernization of Voice Communication System for Air Traffic Control
+description: Voice Communication System for Air Traffic Control
+date: '2024-1-15'
 published: true
-coverImage: https://picsum.photos/1300/400?grayscale
+thumbnail: "http://localhost:5173/content/work/vcs-thumbnail-01.webp"
+thumbnailAlt: "Thumbnail image"
+thumbnailArray: [
+  {alt: "text", url: "http://localhost:5173/content/work/vcs-thumbnail-02.webp"},
+  {alt: "text", url: "http://localhost:5173/content/work/vcs-thumbnail-03.webp"},
+]
+coverImage: ""
 coverImageAlt: Cover image
-thumbnail: https://picsum.photos/500/500?grayscale
-thumbnailAlt: Thumbnail image
+client: "Samtech"
+role: ["UI Designer"]
+ProjectDuration: "3 months"
+year: "2019"
+stack: ["Figma", "Notion", "Google forms"]
 ---
 
 ## Markdown
