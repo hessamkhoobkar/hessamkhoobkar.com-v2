@@ -9,7 +9,7 @@
     {alt: "text", url: "http://localhost:5173/content/works/aquaculture-management-thumbnail-02.webp"},
     {alt: "text", url: "http://localhost:5173/content/works/aquaculture-management-thumbnail-03.webp"},
   ]
-  coverImage: ""
+  coverImage: "http://localhost:5173/content/works/aquaculture-management-cover.webp"
   coverImageAlt: Cover image
   client: "Samtech"
   role: ["UI Designer"]

@@ -9,7 +9,7 @@
     {alt: "text", url: "http://localhost:5173/content/works/helpdesk-thumbnail-02.webp"},
     {alt: "text", url: "http://localhost:5173/content/works/helpdesk-thumbnail-03.webp"},
   ]
-  coverImage: ""
+  coverImage: "http://localhost:5173/content/works/helpdesk-cover.webp"
   coverImageAlt: Cover image
   client: "Shabakeh Gostar Kayer"
   role: ["UI Designer", "Front end developer"]

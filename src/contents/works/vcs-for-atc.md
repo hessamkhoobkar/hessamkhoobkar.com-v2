@@ -9,7 +9,7 @@
     {alt: "text", url: "http://localhost:5173/content/works/vcs-thumbnail-02.webp"},
     {alt: "text", url: "http://localhost:5173/content/works/vcs-thumbnail-03.webp"},
   ]
-  coverImage: ""
+  coverImage: "http://localhost:5173/content/works/vcs-cover.webp"
   coverImageAlt: Cover image
   client: "Samtech"
   role: ["UI Designer"]
