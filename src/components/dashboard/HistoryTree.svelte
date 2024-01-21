@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Buttton from '@/components/foundation/Button/Buttton.svelte';
+	import Button from '@/components/foundation/Button/Button.svelte';
 	import Link from '@/assets/icons/Link.svelte';
 
 	const workHistory = [
@@ -31,7 +31,7 @@
 		{#if !isLink}
 			<div class="bg-gray-800 shadow-lg shadow-gray-900 rounded-2xl p-6 pb-8 w-full relative">
 				<div class="absolute top-0 left-0 h-full">
-					<div class="absolute bg-[#111827] top-0 left-8 w-2 h-full " />
+					<div class="absolute bg-[#111827] top-0 left-8 w-2 h-full" />
 					<div
 						class="absolute bg-[#111827] top-6 left-6 w-6 h-6 rounded-full border-4 border-cyan-500"
 					/>
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 		{:else}
-			<Buttton
+			<Button
 				color="plain"
 				variant="outline"
 				label={title}

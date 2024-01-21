@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Buttton from '@/components/foundation/Button/Buttton.svelte';
+	import Button from '@/components/foundation/Button/Button.svelte';
 	import Modal from '@/components/foundation/Modal.svelte';
 
 	import Avatar from '@/assets/images/hessam-avatar.jpg';
@@ -35,7 +35,7 @@
 	<div class="flex gap-2 w-full mb-3">
 		{#each socialLinks as socialLink}
 			<!-- content here -->
-			<Buttton
+			<Button
 				size="small"
 				color="plain"
 				target="_blank"
@@ -48,14 +48,14 @@
 	</div>
 	<!-- Facade buttons -->
 	<div class="flex flex-col gap-2 w-full">
-		<Buttton
+		<Button
 			color="plain"
 			variant="outline"
 			label="Setting"
 			icon={Settings}
 			on:click={() => (showSettingModal = true)}
 		/>
-		<Buttton
+		<Button
 			color="plain"
 			variant="filled"
 			label="Log out"

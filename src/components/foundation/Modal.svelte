@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { createEventDispatcher, onDestroy } from 'svelte';
 	import Close from '@/assets/icons/Close.svelte';
-	import Buttton from './Button/Buttton.svelte';
+	import Button from './Button/Button.svelte';
 
 	const dispatch = createEventDispatcher();
 	const close = () => dispatch('close');
@@ -73,8 +73,8 @@
 	</div>
 	<div class="px-8 py-4 bg-gray-800 rounded-b-2xl flex justify-end items-center gap-4">
 		<slot name="footer">
-			<Buttton variant="filled" color="plain" label="Cancel" on:click={close} />
-			<Buttton
+			<Button variant="filled" color="plain" label="Cancel" on:click={close} />
+			<Button
 				variant="filled"
 				color="primary"
 				label="Bamboozled"
