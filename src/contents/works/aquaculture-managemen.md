@@ -16,8 +16,8 @@
   ProjectDuration: "5 months"
   year: "2020"
   stack: ["Figma", "Notion", "Google forms"]
-  repository: "asddasdsafasfd"
-  live: "asddasdsafasfd"
+  repository: ""
+  live: ""
 ---
 
 I am thrilled to showcase my involvement in a groundbreaking project with Samtech, where we embarked on a mission to transform aquaculture management through cutting-edge science and AI. This project aimed to revolutionize the breeding practices of a holding company owning multiple aquaculture farms, employing a unique approach to enhance the quality and profitability of fisheries.

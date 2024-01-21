@@ -16,8 +16,8 @@
   ProjectDuration: "3 months"
   year: "2019"
   stack: ["Figma", "Notion", "Google forms"]
-  repository: "asddasdsafasfd"
-  live: "asddasdsafasfd"
+  repository: ""
+  live: ""
 ---
 
 I had the privilege to contribute to the advancement of a crucial component in air traffic control – the Voice Communication System (VCS). Samtech, an esteemed client, sought to upgrade the existing system to achieve higher levels of reliability and accessibility. My role in this significant project was to revamp the user interface (UI) of the VCS.
