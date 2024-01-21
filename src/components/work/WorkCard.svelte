@@ -1,23 +1,24 @@
 <script lang="ts">
 	import type { Post } from '@/lib/types';
-	import ExternalLink from '@/assets/icons/ExternalLink.svelte';
 	import WorkCardDetails from './WorkCardDetails.svelte';
+	import Button from '../foundation/Button/Button.svelte';
 
 	export let work: Post;
 </script>
 
-<div class="w-full flex flex-col gap-4 my-16">
+<div class="w-full flex flex-col gap-4">
 	<div
 		class="w-full rounded-2xl bg-gray-800 border border-gray-500 hover:border-primary-900 hover:border-opacity-50 transition-all duration-200 ease-out"
 	>
 		<a
-			class="flex justify-between items-center p-4 hover:text-primary-500 hover:underline transition-all duration-200 ease-out"
+			class="flex justify-between items-center p-4 hover:text-primary-500 transition-all duration-200 ease-out"
 			href={`work/${work.slug}`}
 		>
-			<h2 class="text-4xl font-bold">
+			<h2 class="text-4xl font-bold underline">
 				{work.title}
 			</h2>
-			<ExternalLink class="opacity-50" size="32" />
+
+			<Button color="primary" variant="filled" label="View More Details" />
 		</a>
 	</div>
 	<div class="w-full grid grid-cols-12 grid-rows-3 gap-4">
