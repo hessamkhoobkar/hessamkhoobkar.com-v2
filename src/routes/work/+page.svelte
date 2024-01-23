@@ -19,7 +19,7 @@
 		</div>
 	</PageHero>
 
-	<div class="flex flex-col gap-40 pb-16">
+	<div class="flex flex-col gap-16 xl:gap-40 pb-16">
 		{#each data.posts as work}
 			<WorkCard {work} />
 		{/each}

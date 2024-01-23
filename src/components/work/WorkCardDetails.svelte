@@ -9,7 +9,7 @@
 </script>
 
 <div
-	class="col-span-3 row-span-2 col-start-4 row-start-2 rounded-2xl bg-gray-800 flex flex-col gap-4 p-4 border border-gray-500"
+	class="col-span-1 2xl:col-span-3 2xl:row-span-2 2xl:col-start-4 2xl:row-start-2 rounded-2xl bg-gray-800 flex flex-col gap-4 p-4 border border-gray-500"
 >
 	<div>
 		<h3 class="text-sm font-bold text-gray-400">Client:</h3>

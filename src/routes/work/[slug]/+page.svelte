@@ -19,12 +19,12 @@
 	<!-- Hero -->
 	<div class="w-full rounded-2xl bg-gray-800 border border-gray-600 p-4 mb-4">
 		<img
-			class="w-full rounded-xl min-h-80"
+			class="w-full rounded-xl 2xl:min-h-80"
 			src={data.meta.coverImage}
 			alt={data.meta.coverImageAlt}
 		/>
 		<div class="bg-gradient-to-br from-gray-500 to-white text-transparent bg-clip-text mt-4">
-			<h1 class="text-6xl font-bold">{data.meta.title}</h1>
+			<h1 class="text-3xl md:text-4xl 2xl:text-6xl font-bold">{data.meta.title}</h1>
 		</div>
 	</div>
 
