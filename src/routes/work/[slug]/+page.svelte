@@ -64,7 +64,7 @@
 	</div>
 
 	{#if data.meta.repository && data.meta.live}
-		<div class="flex gap-4 mb-12 font-bold">
+		<div class="flex max-md:flex-col gap-4 mb-12 font-bold">
 			<a
 				target="_blank"
 				href={data.meta.repository}
