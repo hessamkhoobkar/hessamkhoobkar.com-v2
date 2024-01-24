@@ -26,7 +26,7 @@ I had the privilege to contribute to the advancement of a crucial component in a
 
 The challenge lay in balancing modern design principles with the constraints posed by the system's backend, which was rewritten in C and C++. The primary focus was on maintaining simplicity in UI design to align with the VCS's core purpose: ensuring fast and reliable communication in all scenarios.
 
-![The old V.C.S deisgn](http://url/to/img.png)
+![The old V.C.S deisgn](http://localhost:5173/content/works/vcs-og.webp)
 
 After examining the old design, I identified three key areas that need improvement:
 
@@ -42,7 +42,7 @@ As the UI designer for this project, my responsibilities included understanding 
 
 I redesigned the UI with a focus on improving usability and overall user experience. Despite the constraints imposed by the backend technologies, I implemented a touch-friendly interface, making it easier for air traffic controllers to interact with the system efficiently. Additionally, I introduced an innovative theme that automatically adjusted between light and dark modes based on the time of day, enhancing user comfort during extended usage.
 
-![The new deisgn screenshot](http://url/to/img.png)
+![The new deisgn screenshot](http://localhost:5173/content/works/vcs-new-design.webp)
 
 ## Key Features
 
@@ -56,7 +56,8 @@ n the current design, color serves merely as a tool for interface segmentation, 
 
 By minimizing the utilization of the base color, we create ample space for critical alerts and changes to take center stage. A deliberate restriction on the spectrum of colors for communication purposes enhances the user experience by providing clear and immediate meaning to updates. Adhering to established design patterns ensures a swift and direct line of communication with the user.
 
-![States of phone lines](http://url/to/img.png)
+![The new deisgn screenshot](http://localhost:5173/content/works/vcs-phonelines-dark.webp)
+![The new deisgn screenshot](http://localhost:5173/content/works/vcs-lines-dark.webp)
 
 ### Harnessing Themes for Enhanced Accessibility
 
@@ -64,7 +65,7 @@ Our interface revolves around two core themes – light and dark – strategical
 
 In environments where the operator may be stationed near a window, the high-contrast light theme ensures readability and comprehension under direct sunlight. Conversely, the dark theme not only minimizes eye strain in low-light settings but also conserves power, contributing to the device's longevity – a crucial factor for sustained operational efficiency.
 
-![Both light and dark themes in a single screenshot](http://url/to/img.png)
+![The new deisgn screenshot](http://localhost:5173/content/works/vcs-dark-light.webp)
 
 ## Results and Impact
 
