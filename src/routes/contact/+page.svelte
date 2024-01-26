@@ -50,7 +50,7 @@
 					id="fs-frm"
 					name="simple-contact-form"
 					method="post"
-					class="flex flex-col justify-start items-start gap-6 w-full"
+					class="flex flex-col justify-start items-start pt-1 gap-6 w-full h-full"
 				>
 					<div class="flex flex-col xl:flex-row justify-start items-start gap-6 w-full">
 						<div class="flex flex-col justify-start items-start gap-2 w-full">
@@ -85,11 +85,10 @@
 						/>
 					</div>
 
-					<div class="flex flex-col justify-start items-start gap-2 w-full">
+					<div class="flex flex-col justify-start items-start gap-2 w-full grow">
 						<label for="message">Message</label>
 						<textarea
-							class="input"
-							rows="11"
+							class="input grow"
 							name="message"
 							id="message"
 							placeholder="Type your message here. Your feedback is valuable to me and I will respond as soon as possible."
