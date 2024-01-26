@@ -13,7 +13,7 @@
 </script>
 
 <div
-	class="bg-[#0D121D] px-4 py-2 flex justify-between items-center xl:hidden {scrollY > 100
+	class="bg-gray-800 px-4 py-2 flex justify-between items-center xl:hidden {scrollY > 100
 		? 'fixed inset-x-0'
 		: ''}"
 >
@@ -22,7 +22,7 @@
 		alt="The site's logo, a combination of a mark, which is the Persian letter H in a circle, and fully typed hessam khoobkar"
 	/>
 	<button
-		class="bg-[#111827] rounded-xl p-3 flex justify-center items-center"
+		class="bg-gray-700 rounded-xl p-3 flex justify-center items-center"
 		on:click={handleToggle}
 	>
 		<Menu class="w-6 h-6" />

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { navigating } from '$app/stores';
 	import SideNav from '@/components/layout/SideNav.svelte';
 	import MobileHeader from './MobileHeader.svelte';
 
@@ -8,6 +9,8 @@
 	function handleToggle() {
 		menuVisible = !menuVisible;
 	}
+
+	$: if ($navigating) handleToggle();
 </script>
 
 <svelte:window bind:scrollY />

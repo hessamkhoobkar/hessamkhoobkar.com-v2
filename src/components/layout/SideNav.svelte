@@ -20,7 +20,7 @@
 			alt="The site's logo, a combination of a mark, which is the Persian letter H in a circle, and fully typed hessam khoobkar"
 		/>
 		<button
-			class="bg-[#111827] rounded-xl p-3 flex justify-center items-center xl:hidden"
+			class="bg-gray-800 rounded-xl p-3 flex justify-center items-center xl:hidden"
 			on:click={handleToggle}
 		>
 			<Close class="w-6 h-6" />
