@@ -6,6 +6,7 @@
 	import Telegram from '@/assets/icons/Telegram.svelte';
 	import Whatsapp from '@/assets/icons/Whatsapp.svelte';
 	import PageHero from '@/components/layout/PageHero.svelte';
+	import { fade } from 'svelte/transition';
 
 	const linkData = [
 		{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/hessam-khoobkar/', icon: Linkedin },
@@ -14,13 +15,9 @@
 		{ label: 'WhatsApp', href: 'https://wa.me/9196230597', icon: Whatsapp },
 		{ label: 'Gmail address', href: 'mailto:amirhessam.dev@gmail.com', icon: Gmail }
 	];
-</script>
 
-<!-- 
-	ToDo
-	1. Connect the form to the page
-	2. Add a success message for submisstion of the form
- -->
+	let tooltipDisplay: boolean = false;
+</script>
 
 <div class="w-full flex flex-col justify-start items-start xl:gap-12">
 	<!-- Hero -->
@@ -98,11 +95,32 @@
 							placeholder="Type your message here. Your feedback is valuable to me and I will respond as soon as possible."
 						/>
 					</div>
-					<input
-						class="bg-gradient-to-br from-primary-500 to-tertiary-500 border-primary-600 flex justify-center items-center rounded-xl w-full py-5 text-gray-900 font-bold cursor-pointer mt-4 hover:to-primary-600 transition-all duration-200 ease-in-out active:to-primary-700"
-						type="submit"
-						value="Send Message"
-					/>
+					<div class="w-full relative">
+						<input
+							class="bg-gradient-to-br from-primary-500 to-tertiary-500 border-primary-600 flex justify-center items-center rounded-xl w-full py-5 text-gray-900 font-bold cursor-pointer mt-4 disabled:cursor-not-allowed"
+							type="submit"
+							value="Send Message"
+							disabled
+							on:mouseenter={() => {
+								tooltipDisplay = true;
+							}}
+							on:mouseleave={() => {
+								tooltipDisplay = false;
+							}}
+						/>
+						{#if tooltipDisplay}
+							<div
+								transition:fade
+								class="absolute -top-[90%] left-0 bg-gray-700 p-4 rounded-2xl shadow-lg w-3/4"
+							>
+								<p class="text-xs">
+									Unfortunately, the contact form database is down and not accessible at the moment.
+									Please get in touch with me via email or social media.
+								</p>
+								<div class="absolute triangle" />
+							</div>
+						{/if}
+					</div>
 				</form>
 			</div>
 			<div class="w-full xl:w-1/2 flex flex-col justify-start items-start gap-4">
@@ -162,5 +180,13 @@
 
 	.input:focus {
 		@apply bg-opacity-90 border-primary-500 ring-0 outline-none;
+	}
+
+	.triangle {
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 2rem 1.5rem 0 1.5rem;
+		border-color: rgb(28, 32, 42) transparent transparent transparent;
 	}
 </style>
