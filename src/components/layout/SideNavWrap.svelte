@@ -2,7 +2,9 @@
 	import { navigating } from '$app/stores';
 	import SideNav from '@/components/layout/SideNav.svelte';
 	import MobileHeader from './MobileHeader.svelte';
+	import { onMount } from 'svelte';
 
+	let isMobile: boolean = false;
 	let scrollY: number = 0;
 	let menuVisible: boolean = false;
 
@@ -10,7 +12,11 @@
 		menuVisible = !menuVisible;
 	}
 
-	$: if ($navigating) handleToggle();
+	onMount(() => {
+		isMobile = window.innerWidth < 1280;
+	});
+
+	$: if ($navigating && isMobile) handleToggle();
 </script>
 
 <svelte:window bind:scrollY />
