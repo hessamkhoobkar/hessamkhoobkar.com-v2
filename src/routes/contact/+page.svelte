@@ -112,7 +112,7 @@
 								transition:fade
 								class="absolute -top-[90%] left-0 bg-gray-700 p-4 rounded-2xl shadow-lg w-3/4"
 							>
-								<p class="text-xs">
+								<p class="text-xs text-primary-500">
 									Unfortunately, the contact form database is down and not accessible at the moment.
 									Please get in touch with me via email or social media.
 								</p>
