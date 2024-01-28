@@ -2,6 +2,7 @@
 	import { createEventDispatcher, onDestroy } from 'svelte';
 	import Close from '@/assets/icons/Close.svelte';
 	import Button from './Button/Button.svelte';
+	import { fade } from 'svelte/transition';
 
 	const dispatch = createEventDispatcher();
 	const close = () => dispatch('close');
@@ -48,6 +49,9 @@
 	class="fixed inset-0 w-screen h-screen bg-gray-900 bg-opacity-90 backdrop-blur-sm cursor-pointer z-40"
 	on:click={close}
 	on:keydown={handle_keydown}
+	transition:fade={{
+		duration: 300
+	}}
 />
 
 <div
@@ -55,6 +59,9 @@
 	role="dialog"
 	aria-modal="true"
 	bind:this={modal}
+	transition:fade={{
+		duration: 300
+	}}
 >
 	<!-- svelte-ignore a11y-autofocus -->
 	<button
