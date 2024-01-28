@@ -10,6 +10,7 @@
 	import Linkedin from '@/assets/icons/Linkedin.svelte';
 	import Settings from '@/assets/icons/Settings.svelte';
 	import Grineyes from '@/assets/icons/Grineyes.svelte';
+	import Paper from '@/assets/icons/Paper.svelte';
 
 	let showSettingModal = false;
 	let showLogOutModal = false;
@@ -51,8 +52,8 @@
 		<Button
 			color="plain"
 			variant="outline"
-			label="Setting"
-			icon={Settings}
+			label="My Resume"
+			icon={Paper}
 			on:click={() => (showSettingModal = true)}
 		/>
 		<Button
@@ -67,21 +68,22 @@
 
 {#if showSettingModal}
 	<Modal on:close={() => (showSettingModal = false)}>
-		<div
-			class="w-24 h-24 rounded-full bg-gradient-to-tr from-primary-700 bg-opacity-50 border-2 border-primary-500 flex justify-center items-center"
-			slot="header"
-		>
-			<Grineyes size="64" />
+		<div slot="header">
+			<h2 class="text-2xl font-bold text-primary-500">Links to files</h2>
 		</div>
 
-		<h2 class="text-3xl font-bold mb-4">There are no settings here</h2>
-
-		<p class="mb-2">
-			This is a static website. There's no backend, no database, no user authentication, and no
-			settings.
+		<p class="mb-12">
+			thanks for your intreset in my resume. You can view or download diffrent vestion from
+			following links.
 		</p>
 
-		<p class="mb-4">But I'm glad you were intrigued by the website.</p>
+		<div class="flex flex-col gap-4">
+			<Button color="plain" variant="filled" label="Downlaod PDF" />
+			<Button color="plain" variant="filled" label="Downlaod DOC" />
+			<Button color="plain" variant="filled" label="View PDF" />
+		</div>
+
+		<div slot="footer" />
 	</Modal>
 {/if}
 
