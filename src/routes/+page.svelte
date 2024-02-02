@@ -6,10 +6,11 @@
 	import CurrentGame from '@/components/dashboard/CurrentGame.svelte';
 	import Skills from '@/components/dashboard/Skills.svelte';
 	import HistoryTree from '@/components/dashboard/HistoryTree.svelte';
+	import WorkPreview from '@/components/dashboard/WorkPreview.svelte';
 
 	const summaryData = [
 		{ title: 'Total Projects', value: '12', subNote: 'Projects finished and delivered' },
-		{ title: 'Daily tea intake', value: '5', subNote: 'Cup of tea per day' },
+		{ title: 'Daily tea intake', value: '5', subNote: 'Cups of tea per day' },
 		{ title: 'Life under control', value: '64%', subNote: '23% improvement from last year ' }
 	];
 </script>
@@ -19,26 +20,25 @@
 >
 	{#each summaryData as { title, value, subNote }}
 		<div class="col-span-4 p-4 rounded-2xl bg-gray-800 shadow-lg shadow-gray-900">
-			<p class="text-base mb-6">
+			<p class="text-base font-bold mb-6">
 				{title}
 			</p>
-			<p class="text-6xl font-bold text-sky-500 mb-2">
+			<p
+				class="text-6xl font-black bg-gradient-to-tr from-primary-500 to-tertiary-500 text-transparent bg-clip-text mb-2"
+			>
 				{value}
 			</p>
-			<p class="text-xs text-sky-500 text-opacity-60">
+			<p class="text-xs text-gray-400 font-medium">
 				{subNote}
 			</p>
 		</div>
 	{/each}
 	<InfoCard />
 	<TypeChart />
-	<CurrentBook />
+	<WorkPreview />
+	<HistoryTree />
 	<References />
-	<CurrentGame />
-	<div class="col-span-12 flex justify-start items-start gap-6">
-		<HistoryTree />
-		<Skills />
-	</div>
+	<Skills />
 </div>
 
 <!-- 

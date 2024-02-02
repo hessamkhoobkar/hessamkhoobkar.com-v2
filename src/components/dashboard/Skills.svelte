@@ -132,7 +132,7 @@
 	};
 </script>
 
-<div class="w-5/12 flex flex-col justify-start items-start gap-6">
+<div class="col-span-4 flex flex-col justify-start items-start gap-6">
 	<div class="bg-gray-800 shadow-lg shadow-gray-900 rounded-2xl p-6 w-full">
 		{#each allSkills as { title, skills }}
 			<div class="w-full mb-8">
@@ -144,7 +144,7 @@
 				<div class="flex justify-start items-center gap-4">
 					{#each skills as skill}
 						<div class="bg-[#111827] rounded-2xl flex justify-center items-center h-16 w-16">
-							<img src={skill.icon} alt={skill.name} class="max-w-6 max-h-6 " />
+							<img src={skill.icon} alt={skill.name} class="max-w-6 max-h-6" />
 						</div>
 					{/each}
 				</div>
@@ -161,7 +161,7 @@
 			<div class="flex justify-start items-center gap-6">
 				{#each languages.skills as skill}
 					<div class="bg-[#111827] rounded-2xl flex justify-center items-center h-20 w-20">
-						<img src={skill.icon} alt={skill.name} class="max-w-12 max-h-12 " />
+						<img src={skill.icon} alt={skill.name} class="max-w-12 max-h-12" />
 					</div>
 				{/each}
 			</div>

@@ -27,10 +27,9 @@
 			I am a front-end developer with a strong focus on building user interfaces and components. My
 			expertise lies in converting design concepts and ideas into functional front-end code that is
 			visually appealing and user-friendly. I have a keen eye for detail and take pride in
-			delivering high-quality work that meets or exceeds client expectations. I am proud that
-			multiple colleagues and clients referred to me as the Magician when it comes to translating
-			existing UI designs into code. My dedication to my craft and passion for creating beautiful
-			and intuitive UIs make me an invaluable asset to any team or project.
+			delivering high-quality work that meets or exceeds client expectations. My dedication to my
+			craft and passion for creating beautiful and intuitive UIs make me an invaluable asset to any
+			team or project.
 		</p>
 	</div>
 </div>
