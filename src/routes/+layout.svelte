@@ -20,7 +20,7 @@
 </svelte:head>
 
 <SideNavWrap />
-<div class="min-h-screen xl:ml-80">
+<div class="min-h-screen xl:ml-72 2xl:ml-80">
 	<div class="w-full max-w-screen-2xl mx-auto p-4 bg-gray-900">
 		<PageTransition url={data.url}>
 			<slot />
