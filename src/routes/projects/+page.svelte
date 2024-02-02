@@ -8,12 +8,12 @@
 
 <div class="flex flex-col justify-between items-center gap-4 md:gap-8">
 	<PageHero>
-		<div class="p-6 md:p-10 md:pt-8 max-w-4xl font-medium">
-			<h1 class="font-black text-4xl mb-4">Discover the themes developed by me</h1>
+		<div class="p-6 md:p-10 md:pt-8 xl:pb-32 max-w-4xl font-medium">
+			<h1 class="font-black text-4xl mb-4">Collection of experiments & projects</h1>
 			<p>
-				These are the themes I've developed for various purposes and platforms. I've created themes
-				for Astro, Next.js, and Sveltekit. I've also developed themes for Headless CMS like Strapi,
-				contentful, payload, and headless WordPress.
+				These are the projects I've developed for various purposes and platforms. This projects are
+				to showcase my skills and knowledge in web development and to experiment and quench my
+				thirst for building things.
 			</p>
 		</div>
 	</PageHero>
