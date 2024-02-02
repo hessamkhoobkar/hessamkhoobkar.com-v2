@@ -50,7 +50,7 @@
 
 		case variant === 'filled' && color === 'plain':
 			variantStyle =
-				'bg-gray-800 border-gray-800 text-white hover:bg-primary-900 hover:bg-opacity-20 hover:text-primary-500';
+				'bg-gray-800 border-gray-800 text-white hover:bg-primary-900 hover:bg-opacity-20 hover:text-primary-500 hover:border-primary-700';
 			break;
 
 		case variant === 'outline' && color === 'plain':
