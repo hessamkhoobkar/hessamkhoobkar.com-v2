@@ -11,10 +11,8 @@
 		<div class="p-4 xl:p-10 xl:pt-8 xl:pb-0 max-w-4xl font-medium">
 			<h1 class="font-black text-4xl mb-4">A curated collection of my work</h1>
 			<p>
-				Embark on a visual journey through the meticulously curated world of design and innovation.
-				I am Hessam khoobkar, a passionate front-end developer and UI designer, and I invite you to
-				explore this carefully selected compilation of my most cherished works. Each piece is a
-				testament to my dedication to craft, blending form and function to create digital
+				I invite you to explore this carefully selected compilation of my most cherished works. Each
+				piece is a testament to my dedication to craft, blending form and function to create digital
 				experiences that resonate.
 			</p>
 		</div>

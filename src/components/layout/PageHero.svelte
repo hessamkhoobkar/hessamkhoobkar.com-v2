@@ -8,7 +8,7 @@
 			break;
 
 		case variant === 'surface':
-			variantStyle = 'bg-gray-800 text-white';
+			variantStyle = 'bg-gradient-to-tr from-gray-800 to-gray-500 text-white';
 			break;
 
 		default:
@@ -17,6 +17,6 @@
 	}
 </script>
 
-<div class="w-full rounded-2xl mt-4 min-h-72 font-medium overflow-hidden {variantStyle}">
+<div class="w-full rounded-2xl mt-4 min-h-60 font-medium overflow-hidden {variantStyle}">
 	<slot />
 </div>
