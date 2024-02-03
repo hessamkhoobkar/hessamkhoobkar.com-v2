@@ -15,7 +15,7 @@
 		{ adress: '/projects', label: 'Projects', icon: DeviceCodeIcon, disabled: false },
 		{ adress: '/themes', label: 'Free Themes', icon: ColorSwatchIcon, disabled: false },
 		{ adress: '#', label: 'Tailwind Collection', icon: TailwindIcon, disabled: true },
-		{ adress: '#', label: 'My Services', icon: TagsIcon, disabled: true },
+		// { adress: '#', label: 'My Services', icon: TagsIcon, disabled: true },
 		{ adress: '/contact', label: 'Contact Me', icon: AtSignIcon, disabled: false }
 	];
 </script>
