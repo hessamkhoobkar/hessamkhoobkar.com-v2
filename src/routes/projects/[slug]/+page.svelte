@@ -67,7 +67,7 @@
 				href={data.meta.live}
 				class="w-full h-full flex justify-between p-4 py-6 grow rounded-2xl bg-gray-800 border border-gray-600 text-gray-300 hover:border-primary-500 hover:text-primary-500 transition-all duration-200 ease-in-out"
 			>
-				<span> live demo </span>
+				<span> Live demo </span>
 				<ExternalLink class="w-6 h-6" />
 			</a>
 		</div>
