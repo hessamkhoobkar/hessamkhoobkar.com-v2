@@ -43,7 +43,7 @@
 		<h3
 			class="text-lg mb-4 font-black bg-clip-text text-transparent bg-gradient-to-br from-primary-500 to-tertiary-500 uppercase"
 		>
-			I Speak in
+			I speak in
 		</h3>
 
 		<div class="flex flex-wrap gap-2">

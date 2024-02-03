@@ -3,7 +3,7 @@
 	import '@splidejs/svelte-splide/css';
 
 	const splideOptions = {
-		fixedHeight: '18rem',
+		fixedHeight: '16rem',
 		gap: '1rem',
 		pagination: false,
 		arrows: false,
@@ -70,7 +70,7 @@
 			hasTrack={false}
 			class="cursor-pointer"
 			options={splideOptions}
-			aria-label="Svelte Splide Example"
+			aria-label="refrances slider"
 		>
 			<SplideTrack>
 				{#each references as { name, company, position, quote, avatar }}
@@ -80,7 +80,7 @@
 							<img src={avatar} alt={name} class="rounded-full w-12 h-12" />
 							<div class="flex flex-col justify-start items-start">
 								<span class="text-xl">{name}</span>
-								<div class="flex justify-start items-center gap-2">
+								<div class="text-sm flex justify-start items-center gap-2">
 									<span class="text-gray-400">{position}</span>
 									{#if company}
 										<span class="text-gray-400">-</span>
