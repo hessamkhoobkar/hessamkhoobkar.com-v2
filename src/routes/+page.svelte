@@ -7,6 +7,7 @@
 	import Skills from '@/components/dashboard/Skills.svelte';
 	import HistoryTree from '@/components/dashboard/HistoryTree.svelte';
 	import WorkPreview from '@/components/dashboard/WorkPreview.svelte';
+	import AchieveForm from '@/components/dashboard/AchieveForm.svelte';
 
 	const summaryData = [
 		{ title: 'Total Projects', value: '12', subNote: 'Projects finished and delivered' },
@@ -35,16 +36,9 @@
 	{/each}
 	<InfoCard />
 	<TypeChart />
+	<!-- <AchieveForm /> -->
 	<WorkPreview />
 	<HistoryTree />
 	<References />
 	<Skills />
 </div>
-
-<!-- 
-	ToDo:
-	1. Update my work history 
-	2. Upodate skills and lkanguiage section 
-	3. Update cards releated to responsive design
-	4. update data of References section
- -->
