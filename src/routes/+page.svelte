@@ -36,7 +36,6 @@
 	{/each}
 	<InfoCard />
 	<TypeChart />
-	<!-- <AchieveForm /> -->
 	<WorkPreview />
 	<HistoryTree />
 	<References />
