@@ -16,7 +16,7 @@
 		},
 		{
 			isLink: true,
-			title: 'See my work history on my Resume'
+			title: 'See more on my resume'
 		},
 		{
 			title: 'Front-end Developer & UI Designer - Shabakeh Gostar Kayer',
@@ -26,7 +26,7 @@
 	];
 </script>
 
-<div class="col-span-8 flex flex-col justify-start items-start gap-6">
+<div class="col-span-1 md:col-span-6 xl:col-span-8 flex flex-col justify-start items-start gap-6">
 	{#each workHistory as { title, details, tools, isLink }}
 		{#if !isLink}
 			<div class="bg-gray-800 shadow-lg shadow-gray-900 rounded-2xl p-6 pb-8 w-full relative">

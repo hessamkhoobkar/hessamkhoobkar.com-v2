@@ -25,7 +25,7 @@
 	const languages = ['English', 'Turkish', 'Persian'];
 </script>
 
-<div class="col-span-4 flex flex-col justify-start items-start gap-6">
+<div class="col-span-1 md:col-span-6 xl:col-span-4 flex flex-col justify-start items-start gap-6">
 	<div class="bg-gray-800 shadow-lg shadow-gray-900 rounded-2xl p-4 w-full">
 		<h3
 			class="text-lg mb-4 font-black bg-clip-text text-transparent bg-gradient-to-br from-primary-500 to-tertiary-500 uppercase"

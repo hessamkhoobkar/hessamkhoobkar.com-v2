@@ -32,14 +32,14 @@
 </script>
 
 <div
-	class="col-span-4 bg-gray-800 shadow-lg shadow-gray-900 rounded-2xl p-4 relative overflow-hidden"
+	class="col-span-1 md:col-span-3 xl:col-span-4 bg-gray-800 shadow-lg shadow-gray-900 rounded-2xl p-4 relative overflow-hidden"
 >
 	<h3
 		class="text-lg mb-4 font-black bg-clip-text text-transparent bg-gradient-to-br from-primary-500 to-tertiary-500 uppercase"
 	>
 		My Works
 	</h3>
-	<div class="w-full h-[90%] grid grid-cols-1 grid-rows-2 gap-4">
+	<div class="w-full h-96 xl:h-[90%] grid grid-cols-1 grid-rows-2 gap-4">
 		<div class="relative col-span-1 row-span-1">
 			<WorkPreviewSlide slideData={thumbnails} interval={6100} />
 		</div>
