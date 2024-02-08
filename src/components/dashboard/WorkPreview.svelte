@@ -1,7 +1,11 @@
 <script lang="ts">
-	import Button from '../foundation/Button/Button.svelte';
+	import WorkPreviewSlide from './WorkPreviewSlide.svelte';
 
-	const pics = [
+	const thumbnails = [
+		{
+			src: 'http://localhost:5173/content/projects/pua-thumbnail.webp',
+			alt: 'Parallel universe archive'
+		},
 		{
 			src: 'http://localhost:5173/content/works/helpdesk-thumbnail-01.webp',
 			alt: 'Helpdesk - Youtab'
@@ -13,8 +17,18 @@
 		{
 			src: 'http://localhost:5173/content/works/vcs-thumbnail-01.webp',
 			alt: 'Voice Communication System for Air Traffic Control'
+		},
+		{
+			src: 'http://localhost:5173/content/projects/helpdesk-project-thumbnail.webp',
+			alt: 'Helpdesk - Youtab'
 		}
 	];
+
+	const revThumbnails = () => {
+		const revThumbnails = [...thumbnails];
+		revThumbnails.reverse();
+		return revThumbnails;
+	};
 </script>
 
 <div
@@ -25,25 +39,12 @@
 	>
 		My Works
 	</h3>
-	<div class="absolute left-0 w-full flex flex-col gap-4 p-4">
-		{#each pics as { src, alt }}
-			<div class="rounded-2xl overflow-hidden">
-				<img {src} {alt} />
-			</div>
-		{/each}
-	</div>
-
-	<div
-		class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-gray-800 via-gray-800/80 to-gray-800/0"
-	/>
-
-	<div class="absolute bottom-0 left-0 w-full p-4">
-		<Button
-			class="w-full"
-			color="primary"
-			variant="filled"
-			label="See all my work here"
-			href="/work"
-		/>
+	<div class="w-full h-[90%] grid grid-cols-1 grid-rows-2 gap-4">
+		<div class="relative col-span-1 row-span-1">
+			<WorkPreviewSlide slideData={thumbnails} interval={6100} />
+		</div>
+		<div class="relative col-span-1 row-span-1">
+			<WorkPreviewSlide slideData={revThumbnails()} interval={4000} />
+		</div>
 	</div>
 </div>
