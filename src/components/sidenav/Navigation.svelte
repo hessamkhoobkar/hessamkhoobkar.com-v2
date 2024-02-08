@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { createEventDispatcher } from 'svelte';
 
 	import AppleIcon from '@/assets/icons/Apple.svelte';
 	import AtSignIcon from '@/assets/icons/At.svelte';
 	import DeviceCodeIcon from '@/assets/icons/DeviceCode.svelte';
 	import ColorSwatchIcon from '@/assets/icons/ColorSwatch.svelte';
 	import HomeIcon from '@/assets/icons/Home.svelte';
-	import TagsIcon from '@/assets/icons/Tags.svelte';
 	import TailwindIcon from '@/assets/icons/Tailwind.svelte';
 
 	const links = [
@@ -18,12 +18,19 @@
 		// { adress: '#', label: 'My Services', icon: TagsIcon, disabled: true },
 		{ adress: '/contact', label: 'Contact Me', icon: AtSignIcon, disabled: false }
 	];
+
+	const dispatch = createEventDispatcher();
+
+	function handleToggle() {
+		dispatch('linkClick');
+	}
 </script>
 
 <ul>
 	{#each links as { adress, label, icon, disabled }}
 		<li>
 			<a
+				on:click={handleToggle}
 				href={adress}
 				class="flex gap-3 p-3 rounded-2xl border border-transparent mb-1 group {$page.url
 					.pathname === adress

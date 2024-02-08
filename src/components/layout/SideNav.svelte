@@ -27,7 +27,7 @@
 		</button>
 	</div>
 	<div class="flex-grow px-4">
-		<Navigation />
+		<Navigation on:linkClick={handleToggle} />
 	</div>
 	<UserCard />
 </div>

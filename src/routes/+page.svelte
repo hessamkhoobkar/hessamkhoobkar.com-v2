@@ -9,7 +9,6 @@
 </script>
 
 <!-- 
-	- Responsive design audit
 	- Add resume to website
  -->
 
