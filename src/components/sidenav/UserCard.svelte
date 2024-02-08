@@ -82,13 +82,11 @@
 			<Button color="plain" variant="filled" label="Downlaod DOC" />
 			<Button color="plain" variant="filled" label="View PDF" />
 		</div>
-
-		<div slot="footer" />
 	</Modal>
 {/if}
 
 {#if showLogOutModal}
-	<Modal on:close={() => (showLogOutModal = false)}>
+	<Modal haveFooter on:close={() => (showLogOutModal = false)}>
 		<div
 			class="w-24 h-24 rounded-full bg-gradient-to-tr from-primary-700 bg-opacity-50 border-2 border-primary-500 flex justify-center items-center"
 			slot="header"

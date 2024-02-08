@@ -14,7 +14,7 @@
  -->
 
 <div
-	class="grid grid-cols-1 md:grid-cols-6 xl:grid-cols-12 gap-6 w-full max-w-[1440px] mx-auto xl:p-8"
+	class="grid grid-cols-1 md:grid-cols-6 xl:grid-cols-12 gap-6 w-full max-w-[1440px] mx-auto xl:pt-4"
 >
 	<SummaryData />
 	<InfoCard />

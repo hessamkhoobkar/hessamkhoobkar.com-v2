@@ -23,7 +23,7 @@
 
 <MobileHeader {scrollY} on:toggleMenu={handleToggle} />
 <div
-	class="fixed w-72 2xl:w-80 inset-y-0 xl:left-0 z-10 {menuVisible
+	class="fixed w-72 2xl:w-80 inset-y-0 xl:left-0 z-30 {menuVisible
 		? 'right-0 w-screen'
 		: '-right-full'} transition-all duration-300 ease-in-out"
 >

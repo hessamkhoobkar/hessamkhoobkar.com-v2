@@ -13,7 +13,7 @@
 </script>
 
 <div
-	class="bg-gray-800 px-4 py-2 flex justify-between items-center xl:hidden {scrollY > 100
+	class="bg-gray-800 px-4 py-2 flex justify-between items-center xl:hidden z-20 {scrollY > 100
 		? 'fixed inset-x-0'
 		: ''}"
 >

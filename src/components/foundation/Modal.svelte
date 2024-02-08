@@ -4,6 +4,8 @@
 	import Button from './Button/Button.svelte';
 	import { fade } from 'svelte/transition';
 
+	export let haveFooter = false;
+
 	const dispatch = createEventDispatcher();
 	const close = () => dispatch('close');
 
@@ -54,8 +56,9 @@
 	}}
 />
 
+<!-- class="fixed top-1/2 left-1/2 -translate-y-2/4 -translate-x-2/4 w-[calc(100vw - 4rem)] max-w-lg max-h-[calc(100vh - 4rem)] bg-gray-700 rounded-2xl z-50" -->
 <div
-	class="fixed top-1/2 left-1/2 -translate-y-2/4 -translate-x-2/4 w-[calc(100vw - 4rem)] max-w-lg max-h-[calc(100vh - 4rem)] bg-gray-700 rounded-2xl z-50"
+	class="fixed inset-x-4 max-xl:bottom-4 xl:inset-x-0 xl:top-1/2 xl:-translate-y-1/2 mx-auto xl:max-w-xl bg-gray-700 rounded-2xl z-50"
 	role="dialog"
 	aria-modal="true"
 	bind:this={modal}
@@ -72,22 +75,30 @@
 		<Close size="20" class="mr-1" />
 		<span> Close </span>
 	</button>
-	<div class="p-8 py-6">
+	<div class="p-4 xl:p-8 py-6">
 		<slot name="header" />
 	</div>
-	<div class="p-8 pt-0">
+	<div class="p-4 xl:p-8 pt-0">
 		<slot />
 	</div>
-	<div class="px-8 py-4 bg-gray-800 rounded-b-2xl flex justify-end items-center gap-4">
-		<slot name="footer">
-			<Button variant="filled" color="plain" label="Cancel" on:click={close} />
+	{#if haveFooter}
+		<div
+			class="p-4 xl:px-8 xl:py-4 bg-gray-800 rounded-b-2xl flex flex-col md:flex-row justify-end items-center gap-4"
+		>
+			<Button
+				variant="filled"
+				color="plain"
+				label="Cancel"
+				class="max-md:min-w-full"
+				on:click={close}
+			/>
 			<Button
 				variant="filled"
 				color="primary"
 				label="Bamboozled"
-				class="min-w-[9rem]"
+				class="min-w-full xl:min-w-[9rem]"
 				on:click={close}
 			/>
-		</slot>
-	</div>
+		</div>
+	{/if}
 </div>
