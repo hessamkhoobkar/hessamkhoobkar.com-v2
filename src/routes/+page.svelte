@@ -7,7 +7,6 @@
 	import Skills from '@/components/dashboard/Skills.svelte';
 	import HistoryTree from '@/components/dashboard/HistoryTree.svelte';
 	import WorkPreview from '@/components/dashboard/WorkPreview.svelte';
-	import AchieveForm from '@/components/dashboard/AchieveForm.svelte';
 
 	const summaryData = [
 		{ title: 'Total Projects', value: '12', subNote: 'Projects finished and delivered' },
@@ -15,6 +14,13 @@
 		{ title: 'Life under control', value: '64%', subNote: '23% improvement from last year ' }
 	];
 </script>
+
+<!-- 
+	- Update my works card
+	- Responsive design audit 
+	- update resume button
+	- Add resume to website
+ -->
 
 <div
 	class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 gap-6 w-full max-w-[1440px] mx-auto p-8"
