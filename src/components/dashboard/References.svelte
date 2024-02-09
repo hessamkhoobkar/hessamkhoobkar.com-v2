@@ -28,8 +28,7 @@
 			position: 'Senior Product Manager',
 			quote:
 				"Hessam is one of the most valuable people I have ever met. Both smart and professional. Experienced, deadline-oriented, and intelligent person. He is well versed with the technologies and has the hunger to learn on the go. Hessam's background in UX also renders him with an eye for detail and an understanding of user needs. He is a very proactive and helpful person with strong leadership capabilities. Hessam knows how to make peaceful outcomes out of chaotic situations. He is well suited for a fast-changing environment and start-up culture. I highly recommend working with him.",
-			avatar:
-				'https://media.licdn.com/dms/image/C4D03AQHJeWCsIU8b5w/profile-displayphoto-shrink_100_100/0/1629895786528?e=1683158400&v=beta&t=np3ELHvCOZbHpIdKcdcGisMTGZzUft8etO5VKBUEK3o'
+			avatar: 'http://localhost:5173/avatars/1629895787085.jpeg'
 		},
 		{
 			name: 'Yasaman Heydarzadeh',
@@ -37,7 +36,7 @@
 			position: 'Product Design Lead',
 			quote:
 				'Hessam is an exceptional Front End Lead with impressive technical skills and an eye for design. During his time at Coinhaven, Hessam consistently delivered outstanding results, with an unwavering commitment to quality and exceptional attention to detail. He is an excellent communicator and collaborator with strong leadership skills. I highly recommend Hessam for any front-end development role.',
-			avatar: 'https://i.pravatar.cc/300?img=24'
+			avatar: 'http://localhost:5173/avatars/1684407792962.jpeg'
 		},
 		{
 			name: 'Emmanuel Sunday',
@@ -45,7 +44,7 @@
 			position: 'Backend Lead',
 			quote:
 				'Hessam is above all, an engineer that has empathy and is a great leader. He’s profound expertise, vast knowledge base of software engineering and his wit, makes him the firehouse he is.',
-			avatar: 'https://i.pravatar.cc/300?img=25'
+			avatar: 'http://localhost:5173/avatars/1681054339376.jpeg'
 		},
 		{
 			name: 'Ksenia Berezina',
@@ -53,7 +52,7 @@
 			position: 'Product Manager',
 			quote:
 				'Hessam is a very talented, experienced and knowledgable front end developer. He can handle very complex and challenging tasks under deadlines, his enthusiasm really shines through. But most importantly, Hessam is an amazing person! He is extremely professional, yet very friendly and helpful. Hessam is a great team lead as well, managing a team of developers through multiple successful releases. Overall, I cannot recommend Hessam enough!',
-			avatar: 'https://i.pravatar.cc/300?img=26'
+			avatar: 'http://localhost:5173/avatars/1663246993150.jpeg'
 		}
 	];
 </script>
