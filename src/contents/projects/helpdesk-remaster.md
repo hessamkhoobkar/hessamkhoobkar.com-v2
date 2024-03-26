@@ -3,9 +3,9 @@
   description: A rebuild of the Helpdesk project with Next.js, MySQL, and Tailwind CSS.
   date: '2024-1-27'
   published: true
-  thumbnail: "http://localhost:5173/content/projects/helpdesk-project-thumbnail.webp"
+  thumbnail: "https://khoobkar.com/content/projects/helpdesk-project-thumbnail.webp"
   thumbnailAlt: "Thumbnail image"
-  coverImage: "http://localhost:5173/content/works/helpdesk-cover.webp"
+  coverImage: "https://khoobkar.com/content/works/helpdesk-cover.webp"
   coverImageAlt: Cover image
   role: ["UI Designer", "Front-end Developer"]
   year: "2023"

@@ -3,23 +3,23 @@
 
 	const thumbnails = [
 		{
-			src: 'http://localhost:5173/content/projects/pua-thumbnail.webp',
+			src: 'https://khoobkar.com/content/projects/pua-thumbnail.webp',
 			alt: 'Parallel universe archive'
 		},
 		{
-			src: 'http://localhost:5173/content/works/helpdesk-thumbnail-01.webp',
+			src: 'https://khoobkar.com/content/works/helpdesk-thumbnail-01.webp',
 			alt: 'Helpdesk - Youtab'
 		},
 		{
-			src: 'http://localhost:5173/content/works/aquaculture-management-thumbnail-01.webp',
+			src: 'https://khoobkar.com/content/works/aquaculture-management-thumbnail-01.webp',
 			alt: 'Aquaculture management suite'
 		},
 		{
-			src: 'http://localhost:5173/content/works/vcs-thumbnail-01.webp',
+			src: 'https://khoobkar.com/content/works/vcs-thumbnail-01.webp',
 			alt: 'Voice Communication System for Air Traffic Control'
 		},
 		{
-			src: 'http://localhost:5173/content/projects/helpdesk-project-thumbnail.webp',
+			src: 'https://khoobkar.com/content/projects/helpdesk-project-thumbnail.webp',
 			alt: 'Helpdesk - Youtab'
 		}
 	];

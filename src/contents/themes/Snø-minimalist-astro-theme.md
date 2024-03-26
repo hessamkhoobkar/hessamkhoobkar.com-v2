@@ -3,9 +3,9 @@ title: 'Snø: minimalist astro theme'
 description: 'This is a minimalist astro theme for your blog.'
 date: '2023-11-14'
 published: true
-coverImage: 'http://localhost:5173/content/themes/snow_cover.webp'
+coverImage: 'https://khoobkar.com/content/themes/snow_cover.webp'
 coverImageAlt: 'white background with the Norwegian word for snow in black placed in the top left corner of the image, surrounded by screenshots of the theme'
-thumbnail: 'http://localhost:5173/content/themes/snow_thumbnail.webp'
+thumbnail: 'https://khoobkar.com/content/themes/snow_thumbnail.webp'
 thumbnailAlt: 'white background with the Norwegian word for snow in black placed in the top left corner of the image, surrounded by screenshots of the theme'
 repository: 'https://github.com/hessamkhoobkar/sno'
 live: 'https://sno-hessamkhoobkar.vercel.app/'
@@ -21,7 +21,7 @@ So, what's Snø all about? Picture this: simplicity meets sophistication, and we
 
 Snø, a Norwegian word for snow, was selected as the theme's title to capture the essence of purity and simplicity. Influenced by the minimalist design movement and a deep appreciation for the Norwegian landscape, I aimed to infuse a distinctive combination of simplicity and natural beauty into the digital realm.
 
-![an aerial view of a large pile of snow on mountains](http://localhost:5173/content/themes/snow-yadi-afriadi-kQVxf-5bs6s-unsplash.webp "Image")
+![an aerial view of a large pile of snow on mountains](https://khoobkar.com/content/themes/snow-yadi-afriadi-kQVxf-5bs6s-unsplash.webp "Image")
 Photo by [Yadi Afriadi](https://unsplash.com/@matthewfariz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/a-large-pile-of-snow-kQVxf-5bs6s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
   
 ## The Allure of Minimalism

@@ -3,11 +3,11 @@ title: Modernization of Voice Communication System for Air Traffic Control
 description: Voice Communication System for Air Traffic Control
 date: '2024-1-15'
 published: true
-thumbnail: "http://localhost:5173/content/work/vcs-thumbnail-01.webp"
+thumbnail: "https://khoobkar.com/content/work/vcs-thumbnail-01.webp"
 thumbnailAlt: "Thumbnail image"
 thumbnailArray: [
-  {alt: "text", url: "http://localhost:5173/content/work/vcs-thumbnail-02.webp"},
-  {alt: "text", url: "http://localhost:5173/content/work/vcs-thumbnail-03.webp"},
+  {alt: "text", url: "https://khoobkar.com/content/work/vcs-thumbnail-02.webp"},
+  {alt: "text", url: "https://khoobkar.com/content/work/vcs-thumbnail-03.webp"},
 ]
 coverImage: ""
 coverImageAlt: Cover image

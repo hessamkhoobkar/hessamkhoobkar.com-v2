@@ -3,9 +3,9 @@
   description: Voice Communication System for Air Traffic Control
   date: '2024-1-27'
   published: true
-  thumbnail: "http://localhost:5173/content/projects/pua-thumbnail.webp"
+  thumbnail: "https://khoobkar.com/content/projects/pua-thumbnail.webp"
   thumbnailAlt: "Thumbnail image"
-  coverImage: "http://localhost:5173/content/projects/pua-cover.webp"
+  coverImage: "https://khoobkar.com/content/projects/pua-cover.webp"
   coverImageAlt: Cover image
   role: ["UI Designer", "Front-end Developer"]
   year: "2023"
