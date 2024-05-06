@@ -1,8 +1,11 @@
 <script lang="ts">
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 	import '../app.css';
 
 	import SideNavWrap from '@/components/layout/SideNavWrap.svelte';
 	import PageTransition from './transition.svelte';
+
+	injectSpeedInsights();
 
 	export let data: any;
 </script>

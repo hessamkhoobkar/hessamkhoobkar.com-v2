@@ -37,6 +37,7 @@
 	"type": "module",
 	"dependencies": {
 		"@splidejs/svelte-splide": "^0.2.9",
+		"@vercel/speed-insights": "^1.0.10",
 		"chart.js": "^4.4.1"
 	}
 }
