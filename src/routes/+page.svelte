@@ -18,7 +18,7 @@
 	<SummaryData />
 	<InfoCard />
 	<TypeChart />
-	<WorkPreview />
+	<!-- <WorkPreview /> -->
 	<HistoryTree />
 	<References />
 	<Skills />
