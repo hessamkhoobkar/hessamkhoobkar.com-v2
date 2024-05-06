@@ -3,7 +3,7 @@
   description: Aquaculture management suite
   date: '2024-1-16'
   published: true
-  thumbnail: "https://khoobkar.com/content/works/aquaculture-management-thumbnail-01.webp"
+  thumbnail: "https://utfs.io/f/a0dc2267-eb43-4b9c-ad9c-af6cd48a9af9-o5zgy7.webp"
   thumbnailAlt: "Thumbnail image"
   thumbnailArray: [
     {alt: "text", url: "https://khoobkar.com/content/works/aquaculture-management-thumbnail-02.webp"},

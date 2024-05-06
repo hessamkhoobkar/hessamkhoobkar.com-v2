@@ -3,7 +3,7 @@
   description: Helpdesk - Youtab
   date: '2024-1-14'
   published: true
-  thumbnail: "https://khoobkar.com/content/works/helpdesk-thumbnail-01.webp"
+  thumbnail: "https://utfs.io/f/0e878267-3466-4034-84a0-7341f759afb1-rd5p91.webp"
   thumbnailAlt: "Thumbnail image"
   thumbnailArray: [
     {alt: "text", url: "https://khoobkar.com/content/works/helpdesk-thumbnail-02.webp"},

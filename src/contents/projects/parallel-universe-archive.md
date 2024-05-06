@@ -3,7 +3,7 @@
   description: Voice Communication System for Air Traffic Control
   date: '2024-1-27'
   published: true
-  thumbnail: "https://khoobkar.com/content/projects/pua-thumbnail.webp"
+  thumbnail: "https://utfs.io/f/1c9ac6c4-f46d-4aa8-bd25-04c16c15b836-x6t485.webp"
   thumbnailAlt: "Thumbnail image"
   coverImage: "https://khoobkar.com/content/projects/pua-cover.webp"
   coverImageAlt: Cover image

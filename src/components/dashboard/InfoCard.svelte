@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Cover from '@/assets/images/cover.jpg';
+	// import Cover from '@/assets/images/cover.jpg';
 	import Profile from '@/assets/images/profile-pic.png';
 </script>
 
@@ -10,7 +10,7 @@
 	<div class="relative w-full min-h-52">
 		<img
 			class="object-cover w-full min-h-52 rounded-xl border-2 border-gray-900"
-			src={Cover}
+			src="https://utfs.io/f/04f8bf57-4581-4578-870d-db0f25e8daeb-1kh0af.jpg"
 			alt="The cover for my info section inmcluding my handdrwan ux work in my leather notebook and papaer cards with some woods and other props around them on a balck background"
 		/>
 		<div class="absolute inset-0 rounded-xl bg-gradient-to-t from-gray-900" />
