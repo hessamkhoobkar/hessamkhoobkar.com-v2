@@ -6,10 +6,10 @@
   thumbnail: "https://utfs.io/f/b3e133c1-0fef-44d2-ae79-3118f6cf1ef2-22qy6h.webp"
   thumbnailAlt: "Thumbnail image"
   thumbnailArray: [
-    {alt: "text", url: "https://khoobkar.com/content/works/vcs-thumbnail-02.webp"},
-    {alt: "text", url: "https://khoobkar.com/content/works/vcs-thumbnail-03.webp"},
+    {alt: "text", url: "https://utfs.io/f/7cb3243a-3426-47d1-9324-b97fa694a827-22qy6i.webp"},
+    {alt: "text", url: "https://utfs.io/f/ef276bbf-9606-4303-b011-e47e2138ae38-22qy6j.webp"},
   ]
-  coverImage: "https://khoobkar.com/content/works/vcs-cover.webp"
+  coverImage: "https://utfs.io/f/e1e90fdc-4598-41ac-bb51-8e3b9ba7ddf2-sfxu28.webp"
   coverImageAlt: Cover image
   client: "Samtech"
   role: ["UI Designer"]
@@ -26,7 +26,7 @@ I had the privilege to contribute to the advancement of a crucial component in a
 
 The challenge lay in balancing modern design principles with the constraints posed by the system's backend, which was rewritten in C and C++. The primary focus was on maintaining simplicity in UI design to align with the VCS's core purpose: ensuring fast and reliable communication in all scenarios.
 
-![The old V.C.S deisgn](https://khoobkar.com/content/works/vcs-og.webp)
+![The old V.C.S deisgn](https://utfs.io/f/1cc58c7e-ab03-4f9b-8afa-1178a1dfa8b3-dlal41.webp)
 
 After examining the old design, I identified three key areas that need improvement:
 
@@ -42,7 +42,7 @@ As the UI designer for this project, my responsibilities included understanding 
 
 I redesigned the UI with a focus on improving usability and overall user experience. Despite the constraints imposed by the backend technologies, I implemented a touch-friendly interface, making it easier for air traffic controllers to interact with the system efficiently. Additionally, I introduced an innovative theme that automatically adjusted between light and dark modes based on the time of day, enhancing user comfort during extended usage.
 
-![The new deisgn screenshot](https://khoobkar.com/content/works/vcs-new-design.webp)
+![The new deisgn screenshot](https://utfs.io/f/1b609f60-0857-4440-8d7b-bf5ac829d722-k91bce.webp)
 
 ## Key Features
 
@@ -56,8 +56,8 @@ n the current design, color serves merely as a tool for interface segmentation, 
 
 By minimizing the utilization of the base color, we create ample space for critical alerts and changes to take center stage. A deliberate restriction on the spectrum of colors for communication purposes enhances the user experience by providing clear and immediate meaning to updates. Adhering to established design patterns ensures a swift and direct line of communication with the user.
 
-![The new deisgn screenshot](https://khoobkar.com/content/works/vcs-phonelines-dark.webp)
-![The new deisgn screenshot](https://khoobkar.com/content/works/vcs-lines-dark.webp)
+![The new deisgn screenshot](https://utfs.io/f/96cbede9-c3bd-4a84-8efa-fa186ab41e66-rzxq17.webp)
+![The new deisgn screenshot](https://utfs.io/f/95fe67f7-7419-48a3-8565-18b380c4bd09-9a1ydn.webp)
 
 ### Harnessing Themes for Enhanced Accessibility
 
@@ -65,7 +65,7 @@ Our interface revolves around two core themes – light and dark – strategical
 
 In environments where the operator may be stationed near a window, the high-contrast light theme ensures readability and comprehension under direct sunlight. Conversely, the dark theme not only minimizes eye strain in low-light settings but also conserves power, contributing to the device's longevity – a crucial factor for sustained operational efficiency.
 
-![The new deisgn screenshot](https://khoobkar.com/content/works/vcs-dark-light.webp)
+![The new deisgn screenshot](https://utfs.io/f/d4bdf53c-4ad9-46e1-911f-6c0350a44006-jepxom.webp)
 
 ## Results and Impact
 

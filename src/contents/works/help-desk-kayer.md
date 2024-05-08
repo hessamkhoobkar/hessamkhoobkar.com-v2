@@ -6,10 +6,10 @@
   thumbnail: "https://utfs.io/f/0e878267-3466-4034-84a0-7341f759afb1-rd5p91.webp"
   thumbnailAlt: "Thumbnail image"
   thumbnailArray: [
-    {alt: "text", url: "https://khoobkar.com/content/works/helpdesk-thumbnail-02.webp"},
-    {alt: "text", url: "https://khoobkar.com/content/works/helpdesk-thumbnail-03.webp"},
+    {alt: "text", url: "https://utfs.io/f/9965504e-1ce3-47d5-aa4f-edd096517cb8-rd5p92.webp"},
+    {alt: "text", url: "https://utfs.io/f/11722468-efa1-47ed-a3b4-5ff89a38b1be-rd5p93.webp"},
   ]
-  coverImage: "https://khoobkar.com/content/works/helpdesk-cover.webp"
+  coverImage: "https://utfs.io/f/9ffc6e22-4495-4655-869b-60c08fb42568-iobf5w.webp"
   coverImageAlt: Cover image
   client: "Shabakeh Gostar Kayer"
   role: ["UI Designer", "Front end developer"]
@@ -22,8 +22,8 @@
 
 Before moving forward with this case study, I need to mention that there are two versions of this project. The first original was an in-house tool, and it's unacceptable to the public. The second is a public demo of the first one, which I have worked on for a while. The design is different, and the capabilities of this demo are limited. Although I have worked on both, I will focus on the first one in this case study.
 
-![The first version of design](https://khoobkar.com/content/works/helpdesk-og-one.webp)
-![The first version of design](https://khoobkar.com/content/works/helpdesk-og-two.webp)
+![The first version of design](https://utfs.io/f/ec9cd2fa-4aad-49d6-84f6-b0bb4b8b4b2a-g7sblw.webp)
+![The first version of design](https://utfs.io/f/5f6aa5d0-595c-4eb0-8bc9-58bf9d76fe81-g7sfje.webp)
 
 In collaboration with Shabakeh Gostar Kayer, I spearheaded the front-end development and UI design for a comprehensive Help Desk application. This involved the creation of websites, admin panels, staff panels, and user interfaces, all of which were meticulously designed from conceptualization to code implementation.
 
@@ -41,7 +41,7 @@ Upon closer examination of the old design, three critical areas have been identi
 
 As the front-end developer and UI designer, my role encompassed the entire design and development lifecycle. I took charge of creating quality mockups, prototypes, and style guides. Additionally, I conducted user interviews to gain insights into the shortcomings of the existing design, ensuring a user-centric approach. The challenge was to conceptualize original ideas that simplified complex design roadblocks and execute visual design stages seamlessly.
 
-![The dark variant of design](https://khoobkar.com/content/works/helpdesk-dark.webp)
+![The dark variant of design](https://utfs.io/f/926d5847-654e-4bb8-bdbe-3b0dc9d098c2-lp3pl.webp)
 
 ## Solution
 
@@ -52,7 +52,7 @@ I successfully overhauled the design of the Help Desk application's UI, which wa
 Redesigned UI for Help Desk application with a focus on user satisfaction.
 Developed lightweight and customizable themes to support resource-intensive elements such as graphs, charts, and live data tables.
 
-![composition of design pages](https://khoobkar.com/content/works/helpdesk-final.webp)
+![composition of design pages](https://utfs.io/f/4c966324-deee-43fc-9671-7bb62c963007-ipuszn.webp)
 
 ## Results and Impact
 

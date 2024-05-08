@@ -5,7 +5,7 @@
   published: true
   thumbnail: "https://utfs.io/f/38e5e719-dab3-43c5-bd5c-b9de462c92b8-fg47ej.webp"
   thumbnailAlt: "Thumbnail image"
-  coverImage: "https://khoobkar.com/content/works/helpdesk-cover.webp"
+  coverImage: "https://utfs.io/f/9ffc6e22-4495-4655-869b-60c08fb42568-iobf5w.webp"
   coverImageAlt: Cover image
   role: ["UI Designer", "Front-end Developer"]
   year: "2023"
