@@ -1,4 +1,9 @@
-![8f0b617a-bd62-4403-97bb-d236630baa9b](https://github.com/hessamkhoobkar/khoobkar.com/assets/41147418/ce42fe9e-8602-47df-9419-353b67a004d6)
+![khoobkar.com](https://github.com/hessamkhoobkar/khoobkar.com/assets/41147418/ce42fe9e-8602-47df-9419-353b67a004d6)
+
+![Svelte](https://img.shields.io/badge/Svelte-FF3E00.svg?style=for-the-badge&logo=Svelte&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4.svg?style=for-the-badge&logo=Tailwind-CSS&logoColor=white)
+![Chart.js](https://img.shields.io/badge/Chart.js-FF6384.svg?style=for-the-badge&logo=chartdotjs&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000.svg?style=for-the-badge&logo=Vercel&logoColor=white)
 
 # khoobkar.com
 
